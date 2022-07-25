@@ -1,0 +1,7 @@
+{
+  "name": "jeremiahlockwood.com",
+  "scripts": {
+    "start": "node dev.js",
+    "build": "node build.js"
+  }
+}
