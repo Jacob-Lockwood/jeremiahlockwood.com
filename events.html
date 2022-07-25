@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <meta
+      name="keywords"
+      content="Jeremiah Lockwood, Sway Machinery, Jewish Music, Cantor, Cantors, Cantorial Music, Khazones, Carolina Slim, Jewlia Eisenberg, Book of J, Fraternal Order of the Society Blues, Ricky Gordon, Gordon Lockwood, Blues, Jacob Konigsberg, Golden Ages, House of Friendly Ghosts, Hidden Melodies Revealed, Khaira Arby, Piedmont Blues, Fingerpicking, Guitar, Blues Guitar, Fingerpicking Guitar, hazanut, chazonut, hazonut, chazonus, hazonus, chazones, hazones, chazanus, hazanus, khzones, chazzanut, chazanut, chazzonut, hazzonut, chazzonus, hazzonus, chazzones, hazzones, chazzanus, hazzanus"
+    />
+    <title>Events | Jeremiah Lockwood</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Newsreader:wght@500&family=Roboto:ital,wght@0,300;0,700;1,300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/static/css/all.css" />
+    <link rel="stylesheet" href="/static/css/events.css" />
+  </head>
+  <body>
+    <nav class="nav">
+      <button class="nav__mobile-toggle">
+        <svg viewBox="0 0 100 80" width="40" height="40">
+          <rect width="100" height="20" rx="8"></rect>
+          <rect y="30" width="100" height="20" rx="8"></rect>
+          <rect y="60" width="100" height="20" rx="8"></rect>
+        </svg>
+      </button>
+      <ul class="nav__list">
+        <li class="nav__list-item nav__list-item--home">
+          <span class="nav__link">jeremiah lockwood</span>
+        </li>
+
+        <li class="nav__list-item">
+          <a href="/" class="nav__link"> home </a>
+        </li>
+
+        <li class="nav__list-item">
+          <a href="/music/" class="nav__link"> music </a>
+        </li>
+
+        <li class="nav__list-item">
+          <a href="/scholarship.html" class="nav__link">
+            scholarship
+          </a>
+        </li>
+
+        <li class="nav__list-item">
+          <a href="/misc.html" class="nav__link"> miscellaneous </a>
+        </li>
+
+        <li class="nav__list-item">
+          <a href="/events.html" class="nav__link nav__link--active">
+            events
+          </a>
+        </li>
+
+        <li class="nav__list-item">
+          <a href="/contact.html" class="nav__link"> contact </a>
+        </li>
+      </ul>
+    </nav>
+    <h1>Events</h1>
+    <div class="events">
+      <p class="placeholder">Loading events...</p>
+    </div>
+    <footer class="footer">
+      <p>&copy; 2021 Jeremiah Lockwood</p>
+      <p><a href="/contact">Contact</a></p>
+      <p>Website design by Jacob Lockwood</p>
+    </footer>
+    <script src="/static/other/index.js"></script>
+    <script>
+      const container = document.querySelector(".events");
+      const placeholder = document.querySelector(".placeholder");
+      const wrapper = async () => {
+        const corsKey = "61942c9bfc71545b0f5e0875";
+        const headers = {
+          "x-apikey": corsKey,
+          "cache-control": "no-cache",
+        };
+        const response = await fetch(
+          "https://jeremiahlockwood-653b.restdb.io/rest/events",
+          { headers }
+        );
+        /** @type {{ address: string, date: string, description: string, link: string, title: string, _id: string }[]}*/
+        const json = await response.json();
+        const eventElements = json.map(
+          ({ address, date, description, link, title, _id }) => {
+            const eventElement = document.createElement("div");
+            const addressBox = document.createElement("a");
+            const descriptionBox = document.createElement("p");
+            const dateBox = document.createElement("p");
+            const titleBox = document.createElement("h2");
+            const linkBox = document.createElement("a");
+            addressBox.setAttribute(
+              "href",
+              `https://www.google.com/maps/search/?api=1&query=${encodeURI(
+                address
+              )}`
+            );
+            addressBox.textContent = address;
+            linkBox.setAttribute("href", link);
+            linkBox.textContent = link;
+            descriptionBox.textContent = description;
+            dateBox.textContent = date;
+            titleBox.textContent = title;
+            eventElement.setAttribute("data-id", _id);
+            eventElement.classList.add("event");
+            eventElement.append(
+              titleBox,
+              descriptionBox,
+              dateBox,
+              addressBox,
+              linkBox
+            );
+            return eventElement;
+          }
+        );
+        container.removeChild(placeholder);
+        container.append(...eventElements);
+      };
+      wrapper();
+    </script>
+  </body>
+</html>

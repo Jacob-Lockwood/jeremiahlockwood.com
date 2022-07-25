@@ -1,0 +1,22 @@
+h1 {
+  text-align: center;
+}
+h2 {
+  display: block;
+}
+.split {
+  height: 400px;
+  margin-bottom: 5em;
+}
+.event {
+  padding: 2em;
+  margin: 2em;
+  line-height: 2;
+  font-size: 1.2rem;
+}
+.event a {
+  display: block;
+}
+.event p {
+  padding: 0;
+}
