@@ -1,6 +1,6 @@
 {
   "name": "jeremiahlockwood.com",
   "scripts": {
-    "start": "pnpm dlx serve src/"
+    "start": "pnpm dlx live-server src/"
   }
 }
