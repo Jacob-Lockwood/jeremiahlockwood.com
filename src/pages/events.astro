@@ -1,0 +1,47 @@
+---
+import Layout from "src/layouts/MainLayout.astro"
+import { URLSearchParams } from "url"
+import events from "./events.json"
+import linkify from "linkify-string"
+
+const addressToLink = (address: string) =>
+  "https://www.google.com/maps/search/" +
+  new URLSearchParams({ api: "1", query: encodeURIComponent(address) })
+---
+
+<Layout title="Events | Jeremiah Lockwood" active="events">
+  <h1>Events</h1>
+  {
+    events.map(({ title, date, address, description }) => (
+      <div class="event">
+        <h2>{title}</h2>
+        <p class="date">{date}</p>
+        <p>
+          <a href={addressToLink(address)}>{address}</a>
+        </p>
+        <p set:html={linkify(description)} />
+      </div>
+    ))
+  }
+</Layout>
+
+<style>
+  h1 {
+    text-align: center;
+  }
+  h2 {
+    display: block;
+  }
+  .event {
+    padding: 2em;
+    margin: 2em;
+    line-height: 1.4;
+    font-size: 1.2rem;
+  }
+  .event a {
+    display: block;
+  }
+  .event p {
+    padding: 0;
+  }
+</style>

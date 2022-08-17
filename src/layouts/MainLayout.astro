@@ -1,0 +1,130 @@
+---
+import NavBar from "../components/NavBar.svelte"
+import { keywords as defaultKeywords } from "../lib/utils"
+type PageName = "home" | "music" | "scholarship" | "miscellaneous" | "events" | "contact"
+export interface Props {
+  title: string
+  keywords?: string[]
+  active: PageName
+}
+
+const { title, active, keywords = defaultKeywords } = Astro.props as Props
+interface Link {
+  url: string
+  name: PageName
+  active?: boolean
+}
+const links: Link[] = [
+  { url: "/", name: "home", active: active === "home" },
+  { url: "/music/", name: "music", active: active === "music" },
+  {
+    url: "/scholarship",
+    name: "scholarship",
+    active: active === "scholarship",
+  },
+  { url: "/misc", name: "miscellaneous", active: active === "miscellaneous" },
+  { url: "/events", name: "events", active: active === "events" },
+  { url: "/contact", name: "contact", active: active === "contact" },
+]
+---
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="keywords" content={keywords.join(", ")} />
+    <link rel=" icon" type="image/x-icon" href="/favicon.ico" />
+    <meta name="generator" content={Astro.generator} />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Newsreader:wght@500&family=Roboto:ital,wght@0,300;0,700;1,300&display=swap"
+      rel="stylesheet"
+    />
+    <title>{title}</title>
+  </head>
+
+  <body>
+    <NavBar title="Jeremiah Lockwood" links={links} client:load />
+
+    <slot />
+
+    <footer>
+      <p>&copy; {new Date().getFullYear()} Jeremiah Lockwood</p>
+      <p><a href="/contact">Contact</a></p>
+      <p>
+        Website created by <a href="mailto:jacobulysseslockwood@gmail.com"
+          >Jacob Lockwood
+        </a>
+      </p>
+    </footer>
+    <style>
+      :global(*) {
+        box-sizing: border-box;
+        margin: 0;
+        font-family: "Roboto", sans-serif;
+      }
+
+      body {
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        overflow-x: hidden;
+        padding: 5em 0 0 0;
+        background-image: linear-gradient(
+            rgba(255, 255, 255, 0.4),
+            rgba(255, 255, 255, 0.4)
+          ),
+          url("/background.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+      }
+
+      :global(figure) {
+        text-align: center;
+      }
+
+      :global(.split) {
+        display: flex;
+      }
+
+      :global(.split > *) {
+        width: 100%;
+        padding: 1em;
+      }
+
+      :global(iframe) {
+        width: 100%;
+        height: 50vh;
+      }
+
+      @media screen and (max-width: 1000px) {
+        :global(.split) {
+          flex-direction: column;
+        }
+      }
+
+      :global(h1, h2, h3) {
+        font-family: "Newsreader", serif;
+        margin-bottom: 1em;
+      }
+
+      :global(p) {
+        padding: 0 1em;
+      }
+
+      /* FOOTER */
+      footer {
+        margin-top: auto;
+        padding: 4em 2em;
+        background: rgba(0, 0, 20, 0.8);
+        color: white;
+      }
+
+      footer a {
+        color: lightblue;
+      }
+    </style>
+  </body>
+</html>
