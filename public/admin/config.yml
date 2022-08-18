@@ -12,7 +12,7 @@ collections:
         name: "events"
         file: "src/pages/events.json"
         fields:
-          - label: "Events list"
+          - label: "Events"
             name: "events"
             widget: list
             fields:
