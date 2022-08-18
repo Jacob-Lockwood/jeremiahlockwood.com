@@ -4,6 +4,21 @@ const heroImage = "/images/Jeremiah.jpg"
 const albumImage = "/images/golden_ages.jpeg"
 ---
 
+<head>
+  <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+</head>
+<script is:inline>
+  if (window.netlifyIdentity) {
+    window.netlifyIdentity.on("init", user => {
+      if (!user) {
+        window.netlifyIdentity.on("login", () => {
+          document.location.href = "/admin/"
+        })
+      }
+    })
+  }
+</script>
+
 <Layout title="Jeremiah Lockwood" active="home">
   <header class="split-ish">
     <div class="hero__text">
