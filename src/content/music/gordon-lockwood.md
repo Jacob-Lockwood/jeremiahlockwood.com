@@ -1,5 +1,4 @@
 ---
-layout: ../../layouts/MusicLayout.astro
 title: Gordon Lockwood
 image: /images/Gordon Lockwood.png
 previewText: Jeremiah Lockwood and Ricky Gordon have been making music together for over two decades, originally as disciples of Piedmont Blues legend Carolina Slim. For their first post-pandemic live shows they have begun a new duo to share the sonic pleasures stored up over a tumultuous year of longing. Expect old time blues, new-time rhythms, and ballads about all the things we want to do with you.

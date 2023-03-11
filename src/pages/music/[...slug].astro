@@ -1,7 +1,17 @@
 ---
-import MainLayout from "./MainLayout.astro"
-import type { musicFrontmatter } from "src/lib/utils"
-const { image, title } = Astro.props.frontmatter as musicFrontmatter
+import { getCollection } from "astro:content"
+import MainLayout from "../../layouts/MainLayout.astro"
+export async function getStaticPaths() {
+  const musicEntries = await getCollection("music")
+  return musicEntries.map(entry => ({
+    params: { slug: entry.slug },
+    props: { entry },
+  }))
+}
+
+const { entry } = Astro.props
+const { title, image } = entry.data
+const { Content } = await entry.render()
 ---
 
 <MainLayout title={`${title} | Jeremiah Lockwood`} active="music">
@@ -10,7 +20,7 @@ const { image, title } = Astro.props.frontmatter as musicFrontmatter
     <img src={image} alt={title} />
   </header>
   <main class="post">
-    <slot />
+    <Content />
   </main>
 </MainLayout>
 

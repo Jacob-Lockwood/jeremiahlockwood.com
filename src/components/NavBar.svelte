@@ -1,16 +1,16 @@
 <script lang="ts">
-  export let title: string;
-  export let links: { url: string; name: string; active?: boolean }[];
+  export let title: string
+  export let links: { url: string; name: string; active?: boolean }[]
 
-  let mobile: boolean = false;
-  const handleClick = (e: Event) => (mobile = !mobile);
+  let mobile: boolean = false
+  const handleClick = (e: Event) => (mobile = !mobile)
 
-  let scrollPos = 0;
-  let scrolledUp = false;
+  let scrollPos = 0
+  let scrolledUp = false
   const handleScroll = (e: Event) => {
-    scrolledUp = window.scrollY < scrollPos;
-    scrollPos = window.scrollY;
-  };
+    scrolledUp = window.scrollY < scrollPos
+    scrollPos = window.scrollY
+  }
 </script>
 
 <svelte:window on:scroll={handleScroll} />

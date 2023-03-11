@@ -1,5 +1,4 @@
 ---
-layout: ../../layouts/MusicLayout.astro
 title: The Book of J
 image: /images/book-of-j.jpg
 previewText: Old worlds collide in Book of J, as musicians Jewlia Eisenberg (Charming Hostess) and Jeremiah Lockwood (The Sway Machinery) take inspiration from the intersection of the sacred and the radical to create hit songs from out of the depths of American psalmody, Yiddish folklore, and international Jewish liturgical traditions.

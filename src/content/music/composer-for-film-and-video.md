@@ -1,5 +1,4 @@
 ---
-layout: ../../layouts/MusicLayout.astro
 title: Composer for film and video
 image: /images/Mendy poster.jpg
 previewText: In addition to his work as a band leader, singer and guitarist, Jeremiah Lockwood has scored numerous feature films, documentaries, video shorts and plays. His works include award winning collaborations with Paul Andrejco’s Puppet Heap production company. Jeremiah was a 2011 Brooklyn Philharmonic Orchestra. For the BPO he composed a piece for string quartet, drums and electronics titled As Long as the Breath Rattles My Bones (a tribute to blues musician Carolina Slim), and Rooms, a piece for orchestra. Jeremiah’s songs have been featured in the hit TV programs Transparent and Weeds, and in the films Big Bad Love, and Death in Love.

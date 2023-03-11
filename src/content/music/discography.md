@@ -1,8 +1,6 @@
 ---
-layout: ../../layouts/MusicLayout.astro
 title: Discography
 image: /images/purity-and-danger.jpg
-previewText:
 ---
 
 ## Discography

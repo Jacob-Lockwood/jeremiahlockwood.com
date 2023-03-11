@@ -1,5 +1,4 @@
 ---
-layout: ../../layouts/MusicLayout.astro
 title: The Sway Machinery
 image: /images/Sway-Machinery-Blaze after the Cave_062.jpg
 previewText: ‟This unclassifiable, uplifting band is led by the singer and guitarist Jeremiah Lockwood, the grandson of the renowned cantor Jacob Konigsberg, whose choir Lockwood once sang in. Lockwood's diverse musical influences also include a nearly two-decade apprenticeship in the New York subways with the legendary Piedmont blues master Carolina Slim and a collaboration with several prominent Malian musicians which took place on a long visit there a few years ago.” --The New Yorker

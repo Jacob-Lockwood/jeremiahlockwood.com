@@ -1,5 +1,4 @@
 ---
-layout: ../../layouts/MusicLayout.astro
 title: Solo
 image: /images/Jeremiah.jpg
 previewText: Jeremiah Lockwood has made several solo albums over the years that showcase his fingerpicking guitar style, his connection to historic genres of blues and Jewish music, and collaborations with important artists.

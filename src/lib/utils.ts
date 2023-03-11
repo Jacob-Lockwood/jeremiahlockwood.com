@@ -50,6 +50,3 @@ export interface musicFrontmatter {
   previewText: string
   title: string
 }
-
-export const loadImage = (url: string): Promise<string> =>
-  import(`${url}?url`).then<string>(mod => mod.default)

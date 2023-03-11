@@ -1,8 +1,7 @@
 ---
-layout: ../../layouts/MusicLayout.astro
 title: The Fraternal Order of the Society Blues
 image: /images/fraternal-order.jpg
-previewText: When Carolina Slim left this mortal coil on February 16, 2014, we decided to keep his music going. **The Fraternal Order of the Society Blues** debuted on WKCR radio in New York City a few days after the funeral. A trio of three of his most prominent students, The Fraternal Order of the Society Blues extends the music of Carolina Slim into the future.
+previewText: When Carolina Slim left this mortal coil on February 16, 2014, we decided to keep his music going. The Fraternal Order of the Society Blues debuted on WKCR radio in New York City a few days after the funeral. A trio of three of his most prominent students, The Fraternal Order of the Society Blues extends the music of Carolina Slim into the future.
 ---
 
 ## The Fraternal Order of the Society Blues

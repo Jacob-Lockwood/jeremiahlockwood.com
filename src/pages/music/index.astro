@@ -1,36 +1,20 @@
 ---
 import MainLayout from "../../layouts/MainLayout.astro"
 import type { musicFrontmatter } from "src/lib/utils"
+import { getEntryBySlug } from "astro:content"
 
-const orderedPages = [
-  "sway-machinery",
-  "gordon-lockwood",
-  "solo",
-  "book-of-j",
-  "composer-for-film-and-video",
-  "fraternal-order-of-the-society-blues",
-  "discography",
-].map(slug => `/music/${slug}`)
-
-interface PageData extends musicFrontmatter {
-  url: string | undefined
-}
-
-// const pagesGlobData = await Astro.glob<musicFrontmatter>("./*.md")
-// const pagesData = pagesGlobData.map<PageData>(({ frontmatter, url }) => ({
-//   ...frontmatter,
-//   url,
-// }))
-// const pages = orderedPages
-//   .map(page => pagesData.find(data => data.url === page))
-//   .filter(data => data !== undefined) as PageData[]
-
-const pages = await Astro.glob<musicFrontmatter>("./*.md")
-  .then(dataList => orderedPages.map(path => dataList.find(data => data.url === path)))
-  .then(dataList =>
-    dataList.map(data => (data ? { ...data.frontmatter, url: data.url } : null))
-  )
-  .then(dataList => dataList.filter(data => data !== null) as PageData[])
+const pages = await Promise.all(
+  [
+    "sway-machinery",
+    "gordon-lockwood",
+    "golden-ages",
+    "solo",
+    "book-of-j",
+    "composer-for-film-and-video",
+    "fraternal-order-of-the-society-blues",
+    "discography",
+  ].map(slug => getEntryBySlug("music", slug))
+)
 ---
 
 <MainLayout title="Music | Jeremiah Lockwood" active="music">
@@ -81,17 +65,20 @@ const pages = await Astro.glob<musicFrontmatter>("./*.md")
     </div>
     <div class="grid">
       {
-        pages.map(({ title, image, previewText, url }) => (
-          <div class="post">
-            <a href={url}>
-              <img src={image} alt={title} />
-              <div class="card">
-                <h3>{title}</h3>
-                <p>{previewText}</p>
+        pages.map(
+          entry =>
+            entry && (
+              <div class="post">
+                <a href={`/music/${entry.slug}`}>
+                  <img src={entry.data.image} alt={entry.data.title} />
+                  <div class="card">
+                    <h3>{entry.data.title}</h3>
+                    <p>{entry.data.previewText || "No preview text available"}</p>
+                  </div>
+                </a>
               </div>
-            </a>
-          </div>
-        ))
+            )
+        )
       }
     </div>
     <aside>
@@ -140,7 +127,7 @@ const pages = await Astro.glob<musicFrontmatter>("./*.md")
   .post .card {
     color: black;
     padding: 1em;
-    background: hsl(0 15% 80% / 0.7);
+    background: hsl(0 15% 80% / 0.9);
     position: absolute;
     z-index: 5;
     inset: 0 0 auto 0;
