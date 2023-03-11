@@ -6,7 +6,7 @@ extends:
   - plugin:@typescript-eslint/recommended
   - plugin:svelte/recommended
   - plugin:astro/recommended
-  - plugin:prettier/recommended
+  # - plugin:prettier/recommended
 overrides:
   - files:
       - "*.svelte"
@@ -27,6 +27,6 @@ parserOptions:
     - ".astro"
 plugins:
   - "@typescript-eslint"
-  - "prettier"
-rules:
-  prettier/prettier: error
+  # - "prettier"
+# rules:
+#   prettier/prettier: error
