@@ -1,6 +1,5 @@
 ---
 import Layout from "src/layouts/MainLayout.astro"
-import { URLSearchParams } from "url"
 import events from "./events.json"
 import linkify from "linkify-string"
 
@@ -11,21 +10,31 @@ const addressToLink = (address: string) =>
 
 <Layout title="Events | Jeremiah Lockwood" active="events">
   <h1>Events</h1>
-  {
-    events.map(({ title, date, address, description }) => (
-      <div class="event">
-        <h2>{title}</h2>
-        <p class="date">{date}</p>
-        <p>
-          <a href={addressToLink(address)}>{address}</a>
-        </p>
-        <p set:html={linkify(description)} />
-      </div>
-    ))
-  }
+  <main>
+    {
+      events.length ? (
+        events.map(({ title, date, address, description }) => (
+          <div class="event">
+            <h2>{title}</h2>
+            <p class="date">{date}</p>
+            <p>
+              <a href={addressToLink(address)}>{address}</a>
+            </p>
+            <p set:html={linkify(description)} />
+          </div>
+        ))
+      ) : (
+        <p>No upcoming events right now.</p>
+      )
+    }
+  </main>
 </Layout>
 
 <style>
+  main {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
   h1 {
     text-align: center;
   }
