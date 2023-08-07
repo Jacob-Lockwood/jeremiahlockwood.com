@@ -1,7 +1,6 @@
 ---
 import Layout from "../layouts/MainLayout.astro"
 const heroImage = "/images/Jeremiah.jpg"
-const albumImage = "/images/once_upon_a_time_the_fire_burned_brighter.png"
 ---
 
 <Layout title="Jeremiah Lockwood" active="home">
@@ -24,53 +23,44 @@ const albumImage = "/images/once_upon_a_time_the_fire_burned_brighter.png"
         Click here to join the mailing list.
       </a>
     </aside>
-    <aside id="album-notice">
-      <a
-        href="https://ayinpress.org/folio/once-upon-a-time-the-fire-burned-brighter/"
-        target="_blank"
-      >
-        <figure>
-          <img src={albumImage} alt="Once Upon A Time The Fire Burned Brighter" />
-          <figcaption>Debut EP from Gordon Lockwood!!</figcaption>
-        </figure>
-      </a>
-      <div>
-        <p>
-          In the multimedia album Once Upon a Time the Fire Burned Brighter: Ballads from
-          the Yiddish Gothic, scholar and musician Jeremiah Lockwood opens a doorway into
-          the rich sensorium of the Yiddish ballad. Drawing deeply from the work of
-          legendary Yiddish folk singer Lifshe Schaechter-Widman, the collection
-          reimagines and recasts Yiddish ballads through audio and video performances by
-          Gordon Lockwood (the musical project of Lockwood and drummer Ricky Gordon),
-          which appear beside archival visuals, lyric adaptations, and textual
-          explorations. Once Upon a Time the Fire Burned Brighter invites us to experience
-          a body of Jewish song that emerges from a world of fantasy, memory, and
-          symbol—constituting a Yiddish gothic, a folk expressionism unapologetic in the
-          extremes of its enticing imagery.
-        </p>
-        <div>
-          <a
-            href="https://ayinpress.org/folio/once-upon-a-time-the-fire-burned-brighter/"
-            target="_blank"
-          >
-            Read more
-          </a>
-          <a
-            href="https://open.spotify.com/album/25xbK0u9KQZduumUkw1ynM?si=E5DzlbeyTdG6wQFPIfzmiQ"
-            target="_blank"
-            class="listen-on spotify"
-          >
-            Listen on <img src="/images/spotify.svg" alt="Spotify" />
-          </a>
-          <a
-            href="https://music.apple.com/us/album/once-upon-a-time-the-fire-burned-brighter-ballads/1674810118"
-            target="_blank"
-            class="listen-on apple-music"
-          >
-            Listen on <img src="/images/apple-music.svg" alt="Apple Music" />
-          </a>
-        </div>
-      </div>
+    <aside style="border:5px solid black;">
+      <h2>The Dream Past: A Sonic Conjuring</h2>
+      <p>
+        new immersive music experience <br />
+        for the Yamim Noraim (days of awe) from <br />
+        <strong>THE SWAY MACHINERY</strong>
+      </p>
+      <p>
+        September 21, 2023 7:30pm <br />
+        Union Temple - 17 Eastern Parkway, Brooklyn Presented by <br />
+        Congregation Beth Elohim
+      </p>
+      <img
+        src="/images/Yiddish-Time-Machine---Text.jpg"
+        alt=""
+        style="width:100%;margin-top:2rem;"
+      />
+      <p>
+        On September 21, 2023, during the “days of awe” between Rosh Hashana and Yom
+        Kipur, you are invited to the premiere performance of
+        <strong>The Dream Past: A Sonic Conjuring</strong>, the latest project of the
+        “unclassifiable and uplifting” (The New Yorker) Brooklyn rock band,
+        <strong>The Sway Machinery</strong>. Presented by Congregation Beth Elohim in the
+        hauntingly beautiful historic Union Temple, an unreconstructed ruin of an art deco
+        synagogue, this new set of music draws on the cantorial tradition, initiating a
+        dance with the ghosts. Featuring the double-front of vocalists Yuli Ya’el Be’eri
+        and band-leader Jeremiah Lockwood, the ace horn section of band-cofounders Stuart
+        Bogie and Jordan McLean, and the great beauty of drummer John Bollinger, The Dream
+        Past extends the band’s long running project of
+        <i>cantorial revival</i>—excavating the otherworldly potentials of Jewish sacred
+        music and lost melodies to instigate a party, break boundaries between
+        communities, and touch the past. Like its debut project,
+        <i>Hidden Melodies Revealed</i>, which also drew upon High Holidays liturgy, The
+        Dream Past offers an expansive vision of what can be achieved through commitment
+        to ancestor voices and reciprocity with the dead. This new work turns to a lost
+        and now rediscovered archive of bootleg recordings of live prayer leading as the
+        source material for its ecstatic transformation.
+      </p>
     </aside>
     <p class="main__para">
       Jeremiah Lockwood is a musician, scholar, curator and author. He is the founder of
@@ -163,84 +153,7 @@ const albumImage = "/images/once_upon_a_time_the_fire_burned_brighter.png"
     }
   }
 
-  #album-notice {
-    font-size: 1.2rem;
-    padding: 5rem 0;
-    line-height: 1.4;
-  }
-  #album-notice figure {
-    text-align: center;
-    font-size: 1.5rem;
-    width: 100%;
-    margin-bottom: 3rem;
-  }
-  #album-notice figure img {
-    width: 100%;
-  }
-  #album-notice p {
-    max-width: 60ch;
-  }
-  #album-notice > div {
-    display: flex;
-    justify-content: center;
-    gap: 2rem;
-  }
-  #album-notice > div > div {
-    width: max-content;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 1rem;
-  }
-  .listen-on {
-    font-size: 0.8rem;
-    line-height: 2;
-    display: flex;
-    justify-content: center;
-    color: white !important;
-    padding: 4px 6px;
-    border-radius: 8px;
-    gap: 8px;
-    font-weight: 500;
-    font-family: sans-serif;
-    letter-spacing: 0.5px;
-  }
-  .listen-on img {
-    display: inline;
-    width: 4rem;
-  }
-  .listen-on.spotify {
-    background-color: black;
-  }
-  .listen-on.apple-music {
-    background: linear-gradient(
-      180deg,
-      rgba(255, 0, 110, 1) 0%,
-      rgba(250, 64, 91, 1) 50%,
-      rgba(246, 109, 77, 1) 100%
-    );
-  }
-  @media (max-width: 1200px) {
-    #album-notice {
-      text-align: center;
-    }
-    #album-notice > div {
-      flex-direction: column;
-      align-items: center;
-    }
-    #album-notice > div div {
-      flex-direction: row;
-    }
-  }
-
-  .album-img {
-    width: 70%;
-    object-fit: contain;
-    margin: 0 auto;
-  }
-
   .mailing-list {
-    padding: 1rem;
     text-align: center;
   }
 
@@ -257,5 +170,12 @@ const albumImage = "/images/once_upon_a_time_the_fire_burned_brighter.png"
 
   .mailing-list a:hover {
     opacity: 0.8;
+  }
+
+  aside {
+    padding: 3rem;
+  }
+  aside p {
+    margin-top: 2rem;
   }
 </style>

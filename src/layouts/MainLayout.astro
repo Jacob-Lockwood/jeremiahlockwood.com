@@ -1,7 +1,13 @@
 ---
 import NavBar from "../components/NavBar.svelte"
 import { keywords as defaultKeywords } from "../lib/utils"
-type PageName = "home" | "music" | "scholarship" | "miscellaneous" | "events" | "contact"
+type PageName =
+  | "home"
+  | "music"
+  | "scholarship"
+  | "multidisciplinary work"
+  | "events"
+  | "contact"
 export interface Props {
   title: string
   keywords?: string[]
@@ -22,7 +28,11 @@ const links: Link[] = [
     name: "scholarship",
     active: active === "scholarship",
   },
-  { url: "/misc", name: "miscellaneous", active: active === "miscellaneous" },
+  {
+    url: "/multidisciplinary",
+    name: "multidisciplinary work",
+    active: active === "multidisciplinary work",
+  },
   { url: "/events", name: "events", active: active === "events" },
   { url: "/contact", name: "contact", active: active === "contact" },
 ]
