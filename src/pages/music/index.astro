@@ -1,6 +1,5 @@
 ---
 import MainLayout from "../../layouts/MainLayout.astro"
-import type { musicFrontmatter } from "src/lib/utils"
 import { getEntryBySlug } from "astro:content"
 
 const pages = await Promise.all(
@@ -73,7 +72,7 @@ const pages = await Promise.all(
                   <img src={entry.data.image} alt={entry.data.title} />
                   <div class="card">
                     <h3>{entry.data.title}</h3>
-                    <p>{entry.data.previewText || "No preview text available"}</p>
+                    {entry.data.previewText && <p>{entry.data.previewText}</p>}
                   </div>
                 </a>
               </div>

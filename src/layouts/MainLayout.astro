@@ -62,7 +62,6 @@ const links: Link[] = [
       :global(*) {
         box-sizing: border-box;
         margin: 0;
-        font-family: serif;
       }
 
       body {
@@ -72,13 +71,14 @@ const links: Link[] = [
         overflow-x: hidden;
         padding: 5em 0 0 0;
         background-image: linear-gradient(
-            rgba(255, 255, 255, 0.4),
-            rgba(255, 255, 255, 0.4)
+            hsla(200, 80%, 90%, 0.6),
+            hsla(200, 80%, 90%, 0.6)
           ),
           url("/background.png");
         background-repeat: no-repeat;
         background-size: cover;
         background-attachment: fixed;
+        font-family: Roboto, sans-serif;
       }
 
       :global(figure) {
@@ -117,7 +117,11 @@ const links: Link[] = [
       /* FOOTER */
       footer {
         margin-top: auto;
-        padding: 4em 2em;
+        font-size: 1.2rem;
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+        padding: 4em 5rem;
         background: rgba(0, 0, 20, 0.8);
         color: white;
       }
