@@ -1,5 +1,6 @@
 {
   "name": "jeremiahlockwood.com",
+  "type": "module",
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
@@ -8,21 +9,24 @@
     "astro": "astro"
   },
   "devDependencies": {
-    "@astrojs/svelte": "^2.1.0",
+    "@astrojs/svelte": "^3.1.1",
+    "@astrojs/tailwind": "^4.0.0",
     "@types/linkifyjs": "^2.1.4",
-    "@typescript-eslint/eslint-plugin": "^5.33.1",
-    "@typescript-eslint/parser": "^5.33.1",
-    "astro": "^2.1.2",
+    "@typescript-eslint/eslint-plugin": "^6.4.1",
+    "@typescript-eslint/parser": "^6.4.1",
+    "astro": "^2.10.12",
     "eslint": "^8.22.0",
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-astro": "^0.17.1",
-    "eslint-plugin-prettier": "^4.2.1",
-    "eslint-plugin-svelte": "^2.6.0",
-    "prettier-plugin-astro": "^0.5.0",
-    "svelte": "^3.56.0"
+    "eslint-plugin-svelte": "^2.33.0",
+    "prettier": "^3.2.4",
+    "prettier-plugin-astro": "^0.13.0",
+    "prettier-plugin-tailwindcss": "^0.5.11",
+    "svelte": "^4.2.0",
+    "tailwindcss": "^3.3.3",
+    "typescript": "^5.1.6"
   },
   "dependencies": {
-    "@astrojs/tailwind": "^3.1.0",
     "linkify-string": "^3.0.4"
   }
 }

@@ -1,9 +1,9 @@
-import type { AstroUserConfig } from "astro"
-
-import svelte from "@astrojs/svelte"
+import { defineConfig } from "astro/config";
+import svelte from "@astrojs/svelte";
+// import tailwind from "@astrojs/tailwind"
 
 // https://astro.build/config
-export default {
+export default defineConfig({
   site: "https://jeremiahlockwood.com",
   integrations: [svelte()],
-} as AstroUserConfig
+});

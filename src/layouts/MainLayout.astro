@@ -1,24 +1,24 @@
 ---
-import NavBar from "../components/NavBar.svelte"
-import { keywords as defaultKeywords } from "../lib/utils"
+import NavBar from "../components/NavBar.svelte";
+import { keywords as defaultKeywords } from "../lib/utils";
 type PageName =
   | "home"
   | "music"
   | "scholarship"
   | "multidisciplinary work"
   | "events"
-  | "contact"
+  | "contact";
 export interface Props {
-  title: string
-  keywords?: string[]
-  active: PageName
+  title: string;
+  keywords?: string[];
+  active: PageName;
 }
 
-const { title, active, keywords = defaultKeywords } = Astro.props as Props
+const { title, active, keywords = defaultKeywords } = Astro.props as Props;
 interface Link {
-  url: string
-  name: PageName
-  active?: boolean
+  url: string;
+  name: PageName;
+  active?: boolean;
 }
 const links: Link[] = [
   { url: "/", name: "home", active: active === "home" },
@@ -35,10 +35,10 @@ const links: Link[] = [
   },
   { url: "/events", name: "events", active: active === "events" },
   { url: "/contact", name: "contact", active: active === "contact" },
-]
+];
 ---
 
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -68,77 +68,78 @@ const links: Link[] = [
         </a>
       </p>
     </footer>
-    <style>
-      :global(*) {
-        box-sizing: border-box;
-        margin: 0;
-      }
-
-      body {
-        display: flex;
-        flex-direction: column;
-        height: 100vh;
-        overflow-x: hidden;
-        padding: 5em 0 0 0;
-        background-image: linear-gradient(
-            hsla(200, 80%, 90%, 0.6),
-            hsla(200, 80%, 90%, 0.6)
-          ),
-          url("/background.png");
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-attachment: fixed;
-        font-family: Roboto, sans-serif;
-      }
-
-      :global(figure) {
-        text-align: center;
-      }
-
-      :global(.split) {
-        display: flex;
-      }
-
-      :global(.split > *) {
-        width: 100%;
-        padding: 1em;
-      }
-
-      :global(iframe) {
-        width: 100%;
-        height: 50vh;
-      }
-
-      @media screen and (max-width: 1000px) {
-        :global(.split) {
-          flex-direction: column;
-        }
-      }
-
-      :global(h1, h2, h3) {
-        font-family: "Newsreader", serif;
-        margin-bottom: 1em;
-      }
-
-      :global(p) {
-        padding: 0 1em;
-      }
-
-      /* FOOTER */
-      footer {
-        margin-top: auto;
-        font-size: 1.2rem;
-        display: flex;
-        flex-direction: column;
-        gap: 0.5rem;
-        padding: 4em 5rem;
-        background: rgba(0, 0, 20, 0.8);
-        color: white;
-      }
-
-      footer a {
-        color: lightblue;
-      }
-    </style>
   </body>
 </html>
+
+<style>
+  :global(*) {
+    box-sizing: border-box;
+    margin: 0;
+  }
+
+  body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    overflow-x: hidden;
+    padding: 5em 0 0 0;
+    background-image: linear-gradient(
+        hsla(200, 93%, 82%, 0.5),
+        hsla(200, 80%, 90%, 0.5)
+      ),
+      url("/background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: Roboto, sans-serif;
+  }
+
+  :global(figure) {
+    text-align: center;
+  }
+
+  :global(.split) {
+    display: flex;
+  }
+
+  :global(.split > *) {
+    width: 100%;
+    padding: 1em;
+  }
+
+  :global(iframe) {
+    width: 100%;
+    height: 50vh;
+  }
+
+  @media screen and (max-width: 1000px) {
+    :global(.split) {
+      flex-direction: column;
+    }
+  }
+
+  :global(h1, h2, h3) {
+    font-family: "Newsreader", serif;
+    margin-bottom: 1em;
+  }
+
+  :global(p) {
+    padding: 0 1em;
+  }
+
+  /* FOOTER */
+  footer {
+    margin-top: auto;
+    font-size: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 4em 5rem;
+    background: hsla(227, 100%, 10%, 0.5);
+    color: white;
+  }
+
+  footer a {
+    color: lightblue;
+  }
+</style>

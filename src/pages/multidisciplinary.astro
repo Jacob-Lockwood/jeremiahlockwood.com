@@ -1,20 +1,23 @@
 ---
-import Layout from "../layouts/MainLayout.astro"
-import Modal from "../components/ImageModal.svelte"
+import Layout from "../layouts/MainLayout.astro";
+import Modal from "../components/ImageModal.svelte";
 
-import gosAccImage from "../assets/images/The Gospel According to Carolina Slim annotated set list.JPG?url"
+import gosAccImage from "../assets/images/The Gospel According to Carolina Slim annotated set list.JPG?url";
 const bibUFOImages = await Promise.all(
   Object.values(
-    import.meta.glob("../assets/images/Biblical_UFO_Abduction_in_the_Catskills/*", {
-      as: "url",
-    })
-  ).map(imp => imp())
-)
+    import.meta.glob(
+      "../assets/images/Biblical_UFO_Abduction_in_the_Catskills/*",
+      {
+        as: "url",
+      },
+    ),
+  ).map((imp) => imp()),
+);
 const canDiaImages = await Promise.all(
   Object.values(
-    import.meta.glob("../assets/images/cantorial-diagrams/*", { as: "url" })
-  ).map(imp => imp())
-)
+    import.meta.glob("../assets/images/cantorial-diagrams/*", { as: "url" }),
+  ).map((imp) => imp()),
+);
 ---
 
 <Layout

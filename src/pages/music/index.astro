@@ -1,6 +1,6 @@
 ---
-import MainLayout from "../../layouts/MainLayout.astro"
-import { getEntryBySlug } from "astro:content"
+import MainLayout from "../../layouts/MainLayout.astro";
+import { getEntryBySlug } from "astro:content";
 
 const pages = await Promise.all(
   [
@@ -12,8 +12,8 @@ const pages = await Promise.all(
     "composer-for-film-and-video",
     "fraternal-order-of-the-society-blues",
     "discography",
-  ].map(slug => getEntryBySlug("music", slug))
-)
+  ].map((slug) => getEntryBySlug("music", slug)),
+);
 ---
 
 <MainLayout title="Music | Jeremiah Lockwood" active="music">
@@ -39,10 +39,10 @@ const pages = await Promise.all(
       <blockquote>
         <p>
           <q>
-            The musical story of Jeremiah Lockwood is almost hard to believe. His early
-            musical development was guided by his grandfather, a Jewish cantor, and
-            Carolina Slim, a well-known blues guitarist. All those influences crystallize
-            into something unified.
+            The musical story of Jeremiah Lockwood is almost hard to believe.
+            His early musical development was guided by his grandfather, a
+            Jewish cantor, and Carolina Slim, a well-known blues guitarist. All
+            those influences crystallize into something unified.
           </q>
           -- Joe Tangari, Pitchfork
         </p>
@@ -50,13 +50,14 @@ const pages = await Promise.all(
       <blockquote>
         <p>
           <q>
-            Jeremiah Lockwood &mldr; grew up with two disparate musical mentors. As a boy,
-            Lockwood sang in the choir of his grandfather, Jacob Konigsberg, a renowned
-            cantor who led the High Holidays services at the Loop Synagogue, in Chicago,
-            for several decades. When he was fourteen, Lockwood began a lifelong
-            apprenticeship with the legendary Piedmont blues master guitarist Carolina
-            Slim, which mainly consisted of busking alongside the impeccably dressed Slim
-            in Manhattan subway stations.
+            Jeremiah Lockwood &mldr; grew up with two disparate musical mentors.
+            As a boy, Lockwood sang in the choir of his grandfather, Jacob
+            Konigsberg, a renowned cantor who led the High Holidays services at
+            the Loop Synagogue, in Chicago, for several decades. When he was
+            fourteen, Lockwood began a lifelong apprenticeship with the
+            legendary Piedmont blues master guitarist Carolina Slim, which
+            mainly consisted of busking alongside the impeccably dressed Slim in
+            Manhattan subway stations.
           </q>
           -- The New Yorker
         </p>
@@ -65,7 +66,7 @@ const pages = await Promise.all(
     <div class="grid">
       {
         pages.map(
-          entry =>
+          (entry) =>
             entry && (
               <div class="post">
                 <a href={`/music/${entry.slug}`}>
@@ -76,30 +77,10 @@ const pages = await Promise.all(
                   </div>
                 </a>
               </div>
-            )
+            ),
         )
       }
     </div>
-    <aside>
-      <p>
-        Jeremiah Lockwood's music career began with over a decade of apprenticeship to the
-        legendary Piedmont Blues musician Carolina Slim, playing in the subways of New
-        York City. He also trained under his grandfather Cantor Jacob Konigsberg and
-        performed in his choir. Jeremiah's band The Sway Machinery seeks inspiration from
-        diverse realms of experience related to the cultural geography of New York City.
-        The Sway Machinery has played around the world, including stints at legendary
-        music festivals like Montreal Jazz, Roskilde, and perhaps most notably, Festival
-        au Desert in Timbuktu, Mali. In addition to leading The Sway Machinery, Jeremiah
-        toured for years as guitarist in the popular world-beat band Balkan Beat Box and
-        has scored numerous film and video projects. Jeremiah was a recipient of the
-        2007-8 Six Points Fellowship for Emerging Jewish Artists, was 2010
-        Artist-in-Residence for the Forward and was a 2011 Brooklyn Philharmonic Orchestra
-        Composer Fellow. Jeremiah's duo project with musician Jewlia Eisenberg, Book of J,
-        released their debut album in 2018 to critical acclaim. Jeremiah has also produced
-        an album of some of the young Chassidic cantors he worked with as part of his
-        dissertation research; this album will be released in the next year.
-      </p>
-    </aside>
   </main>
 </MainLayout>
 
