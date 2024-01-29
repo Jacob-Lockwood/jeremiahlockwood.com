@@ -4,7 +4,21 @@ image: /images/Sway-Machinery-Blaze after the Cave_062.jpg
 previewText: ‟This unclassifiable, uplifting band is led by the singer and guitarist Jeremiah Lockwood, the grandson of the renowned cantor Jacob Konigsberg, whose choir Lockwood once sang in. Lockwood's diverse musical influences also include a nearly two-decade apprenticeship in the New York subways with the legendary Piedmont blues master Carolina Slim and a collaboration with several prominent Malian musicians which took place on a long visit there a few years ago.” --The New Yorker
 ---
 
-<aside><p> After two years of quiet and introspection, The Sway Machinery is back. Reunited and with the invigoration of our old friend Yula Be'eri on bass and vocals, we are partying our way towards the future we dreamed of together. If you rue the fact you missed our last program, there's no need to mourn; we'll be out there again soon...you can get on our <a target="_blank" href="http://eepurl.com/goSc9D">mailing list here.</a> Thank you friends! </p><iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/videoseries?list=PLRVvTJjm0TMa9MJOfANwPQVxFM7xmbv5m" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></aside>
+<aside><p>September 21, 2023, during the “days of awe” between Rosh Hashana and Yom Kipur, was the
+premiere performance of The Dream Past: A Sonic Conjuring, the latest project of the
+“unclassifiable and uplifting” (The New Yorker) Brooklyn rock band, The Sway Machinery.
+Presented by Congregation Beth Elohim in the hauntingly beautiful historic Union Temple, an
+unreconstructed ruin of an art deco synagogue, this new set of music draws on the cantorial
+tradition, initiating a dance with the ghosts. Featuring the double-front of vocalists Yuli Ya’el
+Be’eri and band-leader Jeremiah Lockwood, the ace horn section of band-cofounders Stuart
+Bogie and Jordan McLean, and the great beauty of drummer John Bollinger, The Dream Past
+extends the band’s long running project of cantorial revival—excavating the otherworldly
+potentials of Jewish sacred music and lost melodies to instigate a party, break boundaries
+between communities, and touch the past. Like its debut project, Hidden Melodies Revealed,
+which also drew upon High Holidays liturgy, The Dream Past offers an expansive vision of what
+can be achieved through commitment to ancestor voices and reciprocity with the dead. This
+new work turns to a lost and now rediscovered archive of bootleg recordings of live prayer
+leading as the source material for its ecstatic transformation.</p><iframe width="560" height="315" src="https://www.youtube.com/embed/u6POXi5aqaA?si=5iecG-4U0y8KIxp4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></aside>
 
 ## The Sway Machinery
 

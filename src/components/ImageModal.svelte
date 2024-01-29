@@ -1,9 +1,10 @@
 <script lang="ts">
-  export let images: string[]
-  export let title: string
-  let show = false
+  export let images: string[];
+  export let title: string;
+  let show = false;
 </script>
 
+<!-- svelte-ignore a11y-no-noninteractive-element-interactions -->
 <!-- svelte-ignore a11y-click-events-have-key-events -->
 <div class="modal" role="dialog" on:click={() => (show = !show)}>
   <div class="preview">

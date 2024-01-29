@@ -43,10 +43,10 @@ export const keywords = [
   "hazzones",
   "chazzanus",
   "hazzanus",
-]
+];
 
 export interface musicFrontmatter {
-  image: string
-  previewText: string
-  title: string
+  image: string;
+  previewText: string;
+  title: string;
 }

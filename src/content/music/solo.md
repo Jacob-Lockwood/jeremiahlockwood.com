@@ -6,21 +6,20 @@ previewText: Jeremiah Lockwood has made several solo albums over the years that 
 
 ## Solo
 
+<iframe src="https://www.youtube.com/embed/S0N4YniSxmw" frameborder="0" allowfullscreen=""></iframe>
+
 Jeremiah Lockwood has made several solo albums over the years that showcase his fingerpicking guitar style, his connection to historic genres of blues and Jewish music, and collaborations with important artists.
 
 [CLICK HERE TO LISTEN TO JEREMIAH'S RECENT SOLO INSTRUMENTAL ALBUM.](https://rebootrecords.bandcamp.com/album/a-great-miracle-jeremiah-lockwood-s-guitar-soli-chanukah-record) ![A Great Miracle - Jeremiah Lockwood's Guitar Soli Chanukah Album](/images/a_great_miracle.png)
 
-<iframe src="https://www.youtube.com/embed/S0N4YniSxmw" frameborder="0" allowfullscreen=""></iframe>
+Jeremiah has developed a voice working as a liturgist and prayer leader, leading High Holiday
+services for the past decade for the [Because Jewish](https://www.becausejewish.com/) community in Brooklyn, originally working in collaboration with Rabbi Dan Ain. The
+flagship event of the year are Rosh Hashanah services held at Brooklyn Bowl. In 2022, the
+community celebrated the 15<sup>th</sup> anniversary of The Sway Machinery’s Hidden Melodies Revealed
+high holidays event-concert with a multi-media, multi-artist celebration featuring Yoel Kohn,
+Shahanna McKinney Baldon, Debra Winger, Jake Shulman-Ment and others.
 
-Jeremiah has developed a voice working as a liturgist and prayer leader, leading High Holiday services for the past decade in collaboration with Rabbi Dan Ain, first in Brooklyn as part of the Because Jewish Community, and for the past two years at Congregation Beth Sholom in San Francisco. Since 2019, members of The Sway Machinery have continued to perform Jeremiah's music as part of the Because Jewish community's High Holidays offerings, with Yula Be'eri serving as vocal soloist.
-
-During the coronavirus epidemic of 2020, the High Holiday Services were offered as a video recording.
-
-<iframe src="https://www.youtube.com/embed/vrBw5iggC9k" frameborder="0" allowfullscreen=""></iframe>
-
-For the past three years, Jeremiah has developed a performing arts program at Congregation Beth Sholom, curating Listen, a monthly concert series. Where is the boundary between the pleasure and emotion inspired by music and the joy and spiritual engagement that we encounter in prayer? Is listening a spiritual experience? Curated by musician and scholar Jeremiah Lockwood, Listen explores these questions in the context of a Friday evening service. Jeremiah curates offerings from world-renowned musicians working in diverse genres to present profound and soulful musical experiences. Listen offers an opportunity to engage in deep listening, hear virtuosic performances, and learn about sacred music traditions, broadly construed to embrace the breadth of musical experiences that engage the spirit - both Jewish traditions and those of the people Jews have shared homelands with today and across history.
-
-<iframe src="https://www.youtube.com/embed/ysFmkFLAWPI" frameborder="0" allowfullscreen=""></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/H_53E17aHyc?si=VFmMfXk5bfnJ_FZL" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 ## RECORDS
 

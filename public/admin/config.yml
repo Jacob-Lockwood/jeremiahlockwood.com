@@ -16,13 +16,13 @@ collections:
             name: "events"
             widget: list
             fields:
-            - {label: Title, name: title, widget: string}
-            - {label: Address, name: address, widget: string }
-            # * in future, use widget: markdown
-            - {label: Description, name: description, widget: string }
-            - label: "Date"
-              name: "Date"
-              widget: "datetime"
-              format: "LLL"
-              date_format: true
-              time_format: true
+              - { label: Title, name: title, widget: string }
+              - { label: Address, name: address, widget: string }
+              # * in future, use widget: markdown
+              - { label: Description, name: description, widget: string }
+              - label: "Date"
+                name: "Date"
+                widget: "datetime"
+                format: "LLL"
+                date_format: true
+                time_format: true
