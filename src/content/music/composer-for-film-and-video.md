@@ -24,7 +24,7 @@ _As Long as the Breath Rattle My Bones_, performed by members of the Brooklyn Ph
 
 <figure><audio controls="" src="/audio/Rooms-mp3.mp3"></audio><figcaption><p><em>Rooms</em>, performed by the Brooklyn Philharmonic Orchestra</p></figcaption></figure>
 
-<figure><iframe src="https://www.youtube.com/embed/rOIWgoAesMw" frameborder="0" allowfullscreen=""></iframe><figcaption><p>Omar’s Mother, directed by Paul Andrejco</p></figcaption></figure>
+<figure><iframe src="https://www.youtube.com/embed/X1p_HjW82Js" frameborder="0" allowfullscreen=""></iframe><figcaption><p>Omar’s Mother, directed by Paul Andrejco</p></figcaption></figure>
 
 <figure><iframe src="https://www.youtube.com/embed/rOIWgoAesMw" frameborder="0" allowfullscreen=""></iframe><figcaption><p>I Knew an Old Lady Who Swallowed a Fly, directed by Paul Andrejco</p></figcaption></figure>
 
@@ -38,4 +38,4 @@ Re-Emerging: The Jews of Nigeria (2012, directed by Jeff Lieberman)
 
 The Works of Miriam Cabessa (2008, directed by Dana Yavin)
 
-<figure><iframe src="https://www.youtube.com/embed/ARirngX4fOs" frameborder="0" allowfullscreen=""></iframe><figcaption><p>The Law of Three Bears, from The Works of Miriam Cabessa --performed by David Duke, piano; Jordan McLean, trumpet; Zachary Konigsberg, voice; Jeremiah Lockwood, voice</p></figcaption></figure>
+<figure><iframe src="https://www.youtube.com/embed/evZaH4YCf6w" frameborder="0" allowfullscreen=""></iframe><figcaption><p>The Law of Three Bears, from The Works of Miriam Cabessa -- performed by David Duke, piano; Jordan McLean, trumpet; Zachary Konigsberg, voice; Jeremiah Lockwood, voice</p></figcaption></figure>
