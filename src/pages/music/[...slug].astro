@@ -1,17 +1,17 @@
 ---
-import { getCollection } from "astro:content"
-import MainLayout from "../../layouts/MainLayout.astro"
+import { getCollection } from "astro:content";
+import MainLayout from "../../layouts/MainLayout.astro";
 export async function getStaticPaths() {
-  const musicEntries = await getCollection("music")
-  return musicEntries.map(entry => ({
+  const musicEntries = await getCollection("music");
+  return musicEntries.map((entry) => ({
     params: { slug: entry.slug },
     props: { entry },
-  }))
+  }));
 }
 
-const { entry } = Astro.props
-const { title, image } = entry.data
-const { Content } = await entry.render()
+const { entry } = Astro.props;
+const { title, image } = entry.data;
+const { Content } = await entry.render();
 ---
 
 <MainLayout title={`${title} | Jeremiah Lockwood`} active="music">
@@ -41,28 +41,16 @@ const { Content } = await entry.render()
     max-height: 800px;
   }
   main {
-    width: max(200px, 70vw);
+    width: max(200px, 90vw);
     display: flex;
     flex-direction: column;
     gap: 2rem;
     line-height: 1.6em;
     font-size: 1.3em;
   }
-  :global(main :is(p, blockquote, ul)) {
-    max-width: 70ch;
-    margin: 0 4rem;
-  }
-  main :global(img) {
-    width: 100%;
-    height: auto;
-  }
-  main :global(iframe:not(.bandcamp)) {
-    height: 40vw;
-    margin: 0 auto;
-  }
   @media screen and (max-width: 700px) {
     main {
-      font-size: 0.8em;
+      font-size: 1.1em;
     }
   }
 </style>
@@ -79,6 +67,24 @@ const { Content } = await entry.render()
     display: block;
   }
   figure audio {
+    margin: 0 auto;
+  }
+  figure iframe {
+    width: min(90vw, 800px) !important;
+  }
+  main > * {
+    margin: 0 auto;
+  }
+  main :is(p, blockquote, ul) {
+    max-width: 70ch;
+  }
+  main img {
+    width: 100%;
+    height: auto;
+  }
+  main iframe:not(.bandcamp) {
+    height: 40vw;
+    width: min(90%, 800px);
     margin: 0 auto;
   }
 </style>
