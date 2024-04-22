@@ -1,0 +1,48 @@
+---
+import Layout from "../layouts/MainLayout.astro";
+import Modal from "../components/ImageModal.svelte";
+
+import gosAccImage from "../assets/images/The Gospel According to Carolina Slim annotated set list.JPG?url";
+const bibUFOImages = await Promise.all(
+  Object.values(
+    import.meta.glob(
+      "../assets/images/Biblical_UFO_Abduction_in_the_Catskills/*",
+      {
+        as: "url",
+      },
+    ),
+  ).map((imp) => imp()),
+);
+const canDiaImages = await Promise.all(
+  Object.values(
+    import.meta.glob("../assets/images/cantorial-diagrams/*", { as: "url" }),
+  ).map((imp) => imp()),
+);
+---
+
+<Layout
+  title="Multidisciplinary Work | Jeremiah Lockwood"
+  active="multidisciplinary work"
+>
+  <main>
+    <h1>Multidisciplinary Work</h1>
+
+    <section>
+      <Modal
+        images={bibUFOImages}
+        title="Biblical UFO Abduction in the Catskills"
+        client:load
+      />
+      <Modal
+        images={[gosAccImage]}
+        title="The Gospel According to Carolina Slim"
+        client:load
+      />
+      <Modal images={canDiaImages} title="Cantorial Diagrams" client:load />
+    </section>
+
+    <aside>
+      <p>…And more soon</p>
+    </aside>
+  </main>
+</Layout>
