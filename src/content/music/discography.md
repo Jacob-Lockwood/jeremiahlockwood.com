@@ -3,8 +3,6 @@ title: Discography
 image: /images/purity-and-danger.jpg
 ---
 
-## Discography
-
 Book of J, Book of J, 3rd Generation Recordings 2018
 
 [http://www.3rdgenerationrecordings.com/products/609681-book-of-j](http://www.3rdgenerationrecordings.com/products/609681-book-of-j)

@@ -4,8 +4,6 @@ image: /images/fraternal-order.jpg
 previewText: When Carolina Slim left this mortal coil on February 16, 2014, we decided to keep his music going. The Fraternal Order of the Society Blues debuted on WKCR radio in New York City a few days after the funeral. A trio of three of his most prominent students, The Fraternal Order of the Society Blues extends the music of Carolina Slim into the future.
 ---
 
-## The Fraternal Order of the Society Blues
-
 a tribute to the Life and Music of Carolina Slim (aka Elijah Staley)
 
 <figure><iframe src="https://youtube.com/embed/3kJBjiKEcKc" frameborder="0" allowfullscreen=""></iframe><figcaption>Do Lord</figcaption></figure>
@@ -17,3 +15,11 @@ _Electric Acoustic Piedmont Society Blues._ These were the words emblazoned on t
 When Carolina Slim left this mortal coil on February 16, 2014, we decided to keep his music going. **The Fraternal Order of the Society Blues** debuted on WKCR radio in New York City a few days after the funeral. A trio of three of his most prominent students, The Fraternal Order of the Society Blues extends the music of Carolina Slim into the future.
 
 **Jeremiah Lockwood** (guitar and voice) began to play with Carolina Slim at the tender age of 14. The music of his band The Sway Machinery has been heard in Festivals around the world. Jeremiah continues the education he began with Carolina Slim at Stanford University, where he recently completed his PhD in Education and Ethnomusicology. **Ernesto "Lover Cat" Gomez** (harmonica and voice) was just in his 20s when he began to accompany Carolina Slim. Ernesto's band Brotherhood of the Jug is a mainstay of the Brooklyn folk scene. The elder statesmen in the trio, **Ricky "Dirty Red" Gordon** (washboard and voice), has had a long and storied career as a performer with Wynton Marsalis and as a composer and actor collaborating with iconic filmmaker Spike Lee. Once on a gig underground in a NYC subway station with Carolina Slim, Ricky brought a huge drum set. Afterwards Mr. Slim said, _Ricky you need to_ _lighten your load_ (of the drum set) and from that day on he began playing the washboard.
+
+### 2014 Memorial Broadcast
+
+Carolina Slim memorial broadcast, recorded on "Something Inside of Me" on 02/24/14. Live set performed by Carolina Slim's students and friends: Jeremiah Lockwood (guitar and vocals), Ricky "Dirty Red" Gordon (drums and washboard), and Ernesto Gomez (harmonica).
+
+Elijah Staley, also known as Carolina Slim, was born in Denmark, South Carolina in 1927. Carolina Slim was an influential Piedmont blues musician and was well-known for his underground performances on the New York City subway. He passed away this year, at age 87.
+
+[Click here to listen to the memorial broadcast recordings](https://www.cc-seas.columbia.edu/wkcr/archives/American%20Archive/artist/Carolina%20Slim)

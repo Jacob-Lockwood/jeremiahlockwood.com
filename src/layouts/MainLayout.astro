@@ -54,12 +54,15 @@ const links: Link[] = [
     <title>{title}</title>
   </head>
 
-  <body>
+  <body
+    style="background-image: url(/background2.jpeg)"
+    class="bg-sky-200/50 bg-cover bg-fixed pt-20 text-lg bg-blend-lighten"
+  >
     <NavBar title="Jeremiah Lockwood" links={links} client:load />
 
     <slot />
 
-    <footer>
+    <footer class="mt-40 bg-sky-950/50 px-5 py-20 md:px-52">
       <p>&copy; {new Date().getFullYear()} Jeremiah Lockwood</p>
       <p><a href="/contact">Contact</a></p>
       <p>
@@ -70,79 +73,3 @@ const links: Link[] = [
     </footer>
   </body>
 </html>
-
-<style>
-  :global(*) {
-    box-sizing: border-box;
-    margin: 0;
-  }
-  :global(a.long) {
-    overflow-wrap: break-word;
-  }
-
-  body {
-    display: flex;
-    flex-direction: column;
-    height: 100vh;
-    overflow-x: hidden;
-    padding: 5em 0 0 0;
-    background-image: linear-gradient(
-        hsla(200, 93%, 82%, 0.5),
-        hsla(200, 80%, 90%, 0.5)
-      ),
-      url("/background.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    font-family: Roboto, sans-serif;
-  }
-
-  :global(figure) {
-    text-align: center;
-  }
-
-  :global(.split) {
-    display: flex;
-  }
-  :global(.split > *) {
-    width: 100%;
-    padding: 1em;
-  }
-
-  :global(iframe) {
-    width: 100%;
-    height: 50vh;
-  }
-
-  @media screen and (max-width: 1000px) {
-    :global(.split) {
-      flex-direction: column;
-      flex-wrap: wrap;
-    }
-  }
-
-  :global(h1, h2, h3) {
-    font-family: "Newsreader", serif;
-    margin-bottom: 1em;
-  }
-
-  :global(p) {
-    padding: 0 1em;
-  }
-
-  /* FOOTER */
-  footer {
-    margin-top: auto;
-    font-size: 1.2rem;
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
-    padding: 4em 5rem;
-    background: hsla(227, 100%, 10%, 0.5);
-    color: white;
-  }
-
-  footer a {
-    color: lightblue;
-  }
-</style>
