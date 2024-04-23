@@ -1,5 +1,5 @@
 ---
-import NavBar from "../components/NavBar.svelte";
+import { Navbar } from "../components/navbar.tsx";
 import { keywords as defaultKeywords } from "../lib/utils";
 type PageName =
   | "home"
@@ -14,28 +14,7 @@ export interface Props {
   active: PageName;
 }
 
-const { title, active, keywords = defaultKeywords } = Astro.props as Props;
-interface Link {
-  url: string;
-  name: PageName;
-  active?: boolean;
-}
-const links: Link[] = [
-  { url: "/", name: "home", active: active === "home" },
-  { url: "/music/", name: "music", active: active === "music" },
-  {
-    url: "/scholarship",
-    name: "scholarship",
-    active: active === "scholarship",
-  },
-  {
-    url: "/multidisciplinary",
-    name: "multidisciplinary work",
-    active: active === "multidisciplinary work",
-  },
-  { url: "/events", name: "events", active: active === "events" },
-  { url: "/contact", name: "contact", active: active === "contact" },
-];
+const { title, keywords = defaultKeywords } = Astro.props as Props;
 ---
 
 <!doctype html>
@@ -56,13 +35,13 @@ const links: Link[] = [
 
   <body
     style="background-image: url(/background2.jpeg)"
-    class="bg-sky-200/50 bg-cover bg-fixed pt-20 text-lg bg-blend-lighten"
+    class="bg-sky-200/50 bg-cover bg-fixed pt-24 text-lg bg-blend-lighten"
   >
-    <NavBar title="Jeremiah Lockwood" links={links} client:load />
+    <Navbar client:load />
 
     <slot />
 
-    <footer class="mt-40 bg-sky-950/50 px-5 py-20 md:px-52">
+    <footer class="mt-40 bg-sky-200/50 px-5 py-20 md:px-52">
       <p>&copy; {new Date().getFullYear()} Jeremiah Lockwood</p>
       <p><a href="/contact">Contact</a></p>
       <p>
