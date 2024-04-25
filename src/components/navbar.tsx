@@ -1,4 +1,4 @@
-import { createSignal, type JSXElement } from "solid-js";
+import { createSignal } from "solid-js";
 
 // from HeroIcons
 const MenuIcon = () => (
@@ -18,13 +18,10 @@ const MenuIcon = () => (
   </svg>
 );
 
-function NavbarLink(props: { href: string; children: JSXElement }) {
-  return <a href={props.href}>{props.children}</a>;
-}
 export function Navbar() {
   const [show, setShow] = createSignal(false);
   return (
-    <nav class="fixed top-0 block w-full gap-10 bg-sky-200/90 px-10 py-5 text-lg md:flex md:px-16 md:text-sm lg:text-lg">
+    <nav class="fixed top-0 z-50 block w-full gap-10 bg-sky-200/90 px-10 py-5 text-lg md:flex md:px-16 md:text-sm lg:text-lg">
       <div class="mr-auto flex gap-10">
         <button class="md:hidden" onClick={() => setShow((show) => !show)}>
           <MenuIcon />
@@ -35,12 +32,12 @@ export function Navbar() {
         class="hidden flex-col gap-10 py-10 md:flex md:flex-row md:p-0"
         classList={{ "!flex": show() }}
       >
-        <NavbarLink href="/">Home</NavbarLink>
-        <NavbarLink href="/music/">Music</NavbarLink>
-        <NavbarLink href="/scholarship/">Scholarship</NavbarLink>
-        <NavbarLink href="/visual-art/">Visual Art</NavbarLink>
-        <NavbarLink href="/events">Events</NavbarLink>
-        <NavbarLink href="/contact">Contact</NavbarLink>
+        <a href="/">Home</a>
+        <a href="/music/">Music</a>
+        <a href="/scholarship/">Scholarship</a>
+        <a href="/visual-art/">Visual Art</a>
+        <a href="/events">Events</a>
+        <a href="/contact">Contact</a>
       </div>
     </nav>
   );
