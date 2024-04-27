@@ -41,16 +41,20 @@ const { title, keywords = defaultKeywords } = Astro.props as Props;
 
     <slot />
 
-    <footer
-      class="absolute bottom-0 h-60 w-full bg-sky-200/50 px-5 py-20 md:px-52"
-    >
-      <p>&copy; {new Date().getFullYear()} Jeremiah Lockwood</p>
-      <p><a href="/contact">Contact</a></p>
-      <p>
-        Website created by <a href="mailto:jacobulysseslockwood@gmail.com"
-          >Jacob Lockwood
-        </a>
-      </p>
+    <footer class="absolute bottom-0 flex h-60 w-full bg-sky-200/50 p-10">
+      <div class="m-auto w-max text-center">
+        <p>&copy; {new Date().getFullYear()} Jeremiah Lockwood</p>
+        <p>
+          <a href="/contact" class="text-sky-700 underline underline-offset-4">
+            Contact
+          </a>
+        </p>
+        <p class="text-slate-600">
+          Website created by <a href="mailto:jacobulysseslockwood@gmail.com"
+            >Jacob Lockwood
+          </a>
+        </p>
+      </div>
     </footer>
   </body>
 </html>
