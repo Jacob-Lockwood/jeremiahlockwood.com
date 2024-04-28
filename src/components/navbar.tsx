@@ -1,7 +1,7 @@
 import { createSignal } from "solid-js";
 
 // from HeroIcons
-const MenuIcon = () => (
+const MenuOpen = () => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     fill="none"
@@ -17,6 +17,22 @@ const MenuIcon = () => (
     />
   </svg>
 );
+const MenuClose = () => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    fill="none"
+    viewBox="0 0 24 24"
+    stroke-width="1.5"
+    stroke="currentColor"
+    class="h-6 w-6"
+  >
+    <path
+      stroke-linecap="round"
+      stroke-linejoin="round"
+      d="M6 18 18 6M6 6l12 12"
+    />
+  </svg>
+);
 
 export function Navbar() {
   const [show, setShow] = createSignal(false);
@@ -24,7 +40,7 @@ export function Navbar() {
     <nav class="fixed top-0 z-50 block w-full gap-10 bg-sky-200/90 px-10 py-5 text-lg md:flex md:px-16 md:text-sm lg:text-lg">
       <div class="mr-auto flex gap-10">
         <button class="md:hidden" onClick={() => setShow((show) => !show)}>
-          <MenuIcon />
+          {show() ? <MenuClose /> : <MenuOpen />}
         </button>
         <span>Jeremiah Lockwood</span>
       </div>
