@@ -44,7 +44,7 @@ Drummer Ricky Gordon is a member of the Wynton Marsalis Ensemble and a prolific 
       symbol—constituting a Yiddish gothic, a folk expressionism unapologetic in the
       extremes of its enticing imagery.
     </p>
-    <div class="flex gap-10 items-center justify-center">
+    <div class="flex flex-col sm:flex-row gap-10 items-center justify-center">
       <a
         href="https://ayinpress.org/folio/once-upon-a-time-the-fire-burned-brighter/"
         target="_blank"
