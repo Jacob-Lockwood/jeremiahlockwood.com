@@ -14,14 +14,18 @@ const addressToLink = (address: string) =>
     {
       events.length ? (
         events.map(({ title, date, address, description }) => (
-          <div class="flex flex-col gap-4 text-xl">
+          <div class="flex flex-col gap-2 text-xl">
             <p>{date}</p>
             <p>{title}</p>
             <a href={addressToLink(address)} class="text-sky-800">
               {address}
             </a>
             {description.map((line) => (
-              <p set:html={linkify(line, { className: "text-sky-800" })} />
+              <p
+                set:html={linkify(line, {
+                  className: "text-sky-800 break-all",
+                })}
+              />
             ))}
           </div>
         ))
