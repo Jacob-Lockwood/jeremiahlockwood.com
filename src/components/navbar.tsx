@@ -49,10 +49,10 @@ export function Navbar() {
         classList={{ "!flex": show() }}
       >
         <a href="/">Home</a>
-        <a href="/music/">Music</a>
-        <a href="/scholarship/">Scholarship</a>
-        <a href="/visual-art/">Visual Art</a>
         <a href="/events">Events</a>
+        <a href="/music/">Music</a>
+        <a href="/academic/">Academic</a>
+        <a href="/visual-art/">Visual Art</a>
         <a href="/contact">Contact</a>
       </div>
     </nav>
