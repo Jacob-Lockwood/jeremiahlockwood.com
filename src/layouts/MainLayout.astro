@@ -1,17 +1,9 @@
 ---
 import { Navbar } from "../components/navbar.tsx";
 import { keywords as defaultKeywords } from "../lib/utils";
-type PageName =
-  | "home"
-  | "music"
-  | "scholarship"
-  | "multidisciplinary work"
-  | "events"
-  | "contact";
 export interface Props {
   title: string;
   keywords?: string[];
-  active: PageName;
 }
 
 const { title, keywords = defaultKeywords } = Astro.props as Props;

@@ -14,7 +14,7 @@ const { title, image } = entry.data;
 const { Content } = await entry.render();
 ---
 
-<MainLayout title={`${title} | Jeremiah Lockwood`} active="music">
+<MainLayout title={`${title} | Jeremiah Lockwood`}>
   <header class="mx-auto mb-10 flex max-w-3xl flex-col justify-center px-10">
     <h1 class="mb-10 text-center text-3xl font-bold">{title}</h1>
     <img src={image} alt={title} />
