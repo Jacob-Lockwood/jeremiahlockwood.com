@@ -79,10 +79,10 @@ const pages = await Promise.all(
                     alt={entry.data.title}
                     class="aspect-square w-full object-cover"
                   />
-                  <div class="absolute bottom-0 w-full bg-sky-200/80 p-5">
+                  <div class="absolute bottom-0 w-full bg-sky-200/90 p-5">
                     <h3 class="font-bold">{entry.data.title}</h3>
                     {entry.data.previewText && (
-                      <p>{entry.data.previewText.slice(0, 150)}...</p>
+                      <p class="line-clamp-4">{entry.data.previewText}</p>
                     )}
                   </div>
                 </a>
