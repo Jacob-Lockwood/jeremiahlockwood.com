@@ -1,0 +1,33 @@
+---
+import { getCollection } from "astro:content";
+import MainLayout from "../../layouts/MainLayout.astro";
+export async function getStaticPaths() {
+  const musicEntries = await getCollection("academic");
+  return musicEntries.map((entry) => ({
+    params: { slug: entry.slug },
+    props: { entry },
+  }));
+}
+
+const { entry } = Astro.props;
+const { title, image } = entry.data;
+const { Content } = await entry.render();
+---
+
+<MainLayout title={`${title} | Jeremiah Lockwood`} active="music">
+  <header class="mx-auto mb-10 flex max-w-3xl flex-col justify-center px-10">
+    <h1 class="mb-10 text-center text-3xl font-bold">{title}</h1>
+    <img src={image} alt={title} />
+  </header>
+  <main
+    class="prose prose-lg prose-sky mx-auto break-words px-10 prose-blockquote:border-sky-800/30 prose-blockquote:bg-sky-600/10 prose-blockquote:px-5 prose-blockquote:py-1 prose-figcaption:text-center prose-figcaption:text-slate-700 prose-li:marker:text-sky-900"
+  >
+    <Content />
+  </main>
+</MainLayout>
+
+<style is:global>
+  .prose iframe {
+    @apply aspect-video w-full;
+  }
+</style>

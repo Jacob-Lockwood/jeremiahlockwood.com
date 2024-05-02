@@ -2,7 +2,13 @@
 import Layout from "../../layouts/MainLayout.astro";
 import coverImage from "../../assets/images/Jeremiah smaller.png?url";
 import resume from "../../assets/images/Jeremiah_Lockwood_CV2023-24.pdf?url";
-import endImage from "../../assets/images/IMG_6187.JPG?url";
+import { getEntryBySlug } from "astro:content";
+// import endImage from "../../assets/images/IMG_6187.JPG?url";
+const projects = await Promise.all([
+  getEntryBySlug("academic", "golden-ages"),
+  getEntryBySlug("academic", "melody-like-a-confession"),
+  getEntryBySlug("academic", "live-davenings"),
+]);
 ---
 
 <Layout title="Scholarship | Jeremiah Lockwood" active="scholarship">
@@ -89,227 +95,27 @@ import endImage from "../../assets/images/IMG_6187.JPG?url";
       sacred authority are aligned.
     </p>
 
-    <!-- <h2 id="projects">Projects</h2>
-    <h3 id="golden-ages">Golden Ages</h3>
+    <h2 class="text-3xl font-bold">Projects</h2>
 
-    <img src="/images/golden_ages_cover.jpg" alt="" />
-    <p>
-      <i lang="y">
-        Golden Ages: Hasidic Singers and Cantorial Revival in the Digital Era
-      </i>
-      relates the engaging stories of a group of non-conformist musicians in the
-      New York Chassidic community. Cantorial revivalists are singers who have immersed
-      themselves in the archive of early 20th century commercial Jewish liturgical
-      records, approaching them as a source to build performance identities and musical
-      style. The work of cantorial revivalists is a product of the digital era, shaped
-      both by access to internet-based archival sources and social media platforms
-      for self- promotion. More frequently heard online, in private parties and in
-      concert venues than in synagogues, the work of cantorial revival pushes at
-      normative associations with Jewish prayer, blurring the line between ritual
-      and art.
-    </p>
-
-    <p>
-      <a href="https://www.ucpress.edu/book/9780520396425/golden-ages">
-        Order your copy here.
-      </a>
-    </p>
-
-    <p>
-      I suggest that contemporary Hasidic cantorial revivalists are not only
-      reviving a style of music but are also engaged in a revival of a form of
-      comportment in prayer that foregrounds the role of cantor as arbiter of
-      sacred experience. For cantorial revivalists to achieve their musical
-      goals they must interpolate audiences into an embodied emotional response
-      to the musical cues of the prayer leader. Producing this kind of sacred
-      music community, centered on the experience of listening to the archive,
-      is a utopian aspiration that has not been realized by the revivalists, and
-      perhaps cannot be achieved in the cultural climate of the American
-      synagogue. This has not dissuaded singers from investing time and
-      resources into self-cultivation of a musical practice with no clear home
-      in the current moment.
-    </p>
-
-    <p>
-      Golden Ages: Brooklyn Chassidic Cantorial Revival Today, an album produced
-      by Jeremiah Lockwood featuring some of the brightest voices in the
-      Brooklyn cantorial scene, will be reissued in 2024.
-    </p>
-
-    <p>
-      Concerts of cantors featured in the book take place on an ongoing basis.
-      Look out for a Germany tour in March 2024! A concert with Yanky Lemmer,
-      Yoel Kohn and Shimmy Miller, produced, accompanied and featuring new
-      string quartet arrangements by Lockwood, debuted at the 2022 Krakow Jewish
-      Culture Festival.
-    </p>
-
-    <iframe
-      width="560"
-      height="315"
-      src="https://www.youtube.com/embed/videoseries?si=DwgyycShSaX0aR9b&list=PLB_oGo-IeHOFfKncWT66GKk7485m5ArR1"
-      title="YouTube video player"
-      frameborder="0"
-      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-      allowfullscreen></iframe>
-
-    <h3>
-      Melody Like a Confession: a Cultural History of the Cantorial Gramophone
-      Era
-    </h3>
-    <p>
-      The term cantorial “golden age” signals a period of mediatization and
-      popularization of Ashkenazi liturgical music in the transnational
-      Yiddish-speaking Jewish community from roughly the last decade of the 19<sup
-        >th</sup
-      > century to the decade following the Holocaust. In this period cantors moved
-      ritual music out of synagogue spaces and into the newly emerging media sphere
-      of concert stages, Yiddish theater, radio and, most crucially for the emergence
-      of new practices of sacred listening, the gramophone record. Cantors of the
-      golden age offered a model of a new form of Jewish personhood: an artist who
-      moved between worlds of aesthetic achievement, performance, sensual pop culture
-      iconography, engagement with the burning political ideologies of the period,
-      and sacred authority.
-    </p>
-    <p>
-      My proposed second book project I am currently at work on, <cite
-        >Melody Like a Confession</cite
-      >, will constitute the first monograph on the cultural history of the
-      transnational gramophone era cantorial phenomenon. This proposed book
-      project will bridge archival research, ethnomusicological analysis, and a
-      cultural studies approach steeped in the fields of performance studies and
-      comparative literature. The project is premised on the view of cantorial
-      music as both a form of expressive culture and an intellectual movement
-      within a rapidly evolving period of social change and cultural
-      reinvention. Cantorial music, in the eyes of its key practitioners and
-      their critics on both sides of the Jewish Atlantic world, offered a
-      populist response to modernization, state violence, and migration.
-    </p>
-    <figure>
-      <iframe src="https://www.youtube.com/embed/QC6dco1hdec" allowfullscreen
-      ></iframe>
-      <figcaption>
-        Presentation Prayer and Crime, December 2020, with Yoel Kohn and David
-        Reich
-      </figcaption>
-    </figure>
-    <p>
-      In my previous dissertation research and book project, titled Golden Ages:
-      Hasidic singers and
-      <cite
-        >cantorial revival in the digital era, I offered an ethnographic study
-        of young singers in the</cite
-      >
-      Brooklyn Hasidic community who look to the cantorial golden age for the stylistic
-      basis of their own aesthetic explorations. In my book I propose a view of their
-      work as a non-conforming social practice within the conservative contemporary
-      Hasidic community. Hasidic cantors call upon the sounds and structures of Jewish
-      sacred musical heritage to stage a disruption in the aesthetics and power hierarchies
-      of their community. Beyond its role as a desirable art form, golden age cantorial
-      music offers a model for aspiring Hasidic singers of a form of Jewish cultural
-      productivity in which artistic excellence, maverick outsider status, and sacred
-      authority were aligned. The work of these contemporary cantors offers clues
-      about the meaning of the work of gramophone era cantors, suggesting that these
-      historical figures offer a precedent for musical and social practices that
-      defy institutional authority and push at normative boundaries of sacred and
-      secular by foregrounding artist’s voices in the culturally intimate space of
-      prayer.
-    </p>
-    <p>
-      I intend for my further research on “golden age” cantors to amend a lacuna
-      in modern Jewish cultural history and contribute to broader interventions
-      that advocate for a view of artists and aesthetics as needed elements in
-      constructing histories of marginalized communities. Pursuing archival
-      research about gramophone era cantors, I have made preliminary findings in
-      the Yiddish press that suggest cantors were founts of passionate
-      controversy, aesthetic partisanship, and fulcrums of communal fundraising
-      and organizing in the immigrant community in the United States. Cantors
-      and their critics debated the appropriateness of sound recording,
-      performance outside of the synagogue, and the commercialization of the
-      sacred. These themes in the cantorial sphere paralleled discussions among
-      Yiddish authors about the dialectical role of literature and theater as
-      forms of intellectual cultivation versus their potential impact as a
-      degrading form of populism. Cantors engaged in cultivating a conception of
-      Jewish memory that pivoted between nostalgic images of an imagined Jewish
-      folkloric past and appeals to the ineffable and transcendent in music that
-      would establish a Jewish aesthetic parallel to the achievements of
-      European classical music. These aesthetic claims run parallel to
-      contemporary Jewish political movements that pivoted between nationalism
-      and socialism.
-    </p>
-    <p>
-      Artists in the cantorial market were often considered “outsiders” because
-      of their lack of rabbinic pedigree or economic elite status. Cantorial
-      stars were at times reviled by conservative critics for their lack of
-      adherence to norms of religious orthodoxy, even as they were subjects of
-      public adulation. The emergence of new media opened cantorial performance
-      to artists with controversial identities, including women cantors, often
-      referred to in Yiddish as <i lang="y">khazentes</i>. The
-      <i lang="y">khazente</i> phenomenon, that seems to have begun in the 1910s, brought
-      women cantors to the forefront of popularity, even as they were rejected as
-      ritual leaders in synagogues. The study of the cantorial golden age will bring
-      these important yet forgotten artists into the light of day and reevaluate
-      the gendered history of liturgy and aesthetics by attending to their work.
-    </p>
-    <p>
-      <cite>Melody Like a Confession</cite> will address the central themes of the
-      cantorial populist movement in thematically organized chapters. I have already
-      completed a draft of a chapter on the <i lang="y">khazentes</i>, early 20<sup
-        >th</sup
-      > century women cantors. I have developed a prospectus and research agenda
-      for the other chapters of the book. The proposed chapter are: an introduction
-      that will offer a synthetic approach to the representation of cantors and their
-      music in the Yiddish press and literature; a chapter focusing on the political
-      commitments of cantors and their pivotal involvement as ideologues and fund
-      raisers in labor union politics and Zionism; a chapter that will focus on the
-      culture of chastisement and the ethical ambiguities that surrounded cantors
-      as both preservers of sacred heritage and pop culture stars; and a final chapter
-      that will look at the reception of the cantorial gramophone era in its various
-      “afterlives” across the 20 th and 21 st centuries. This work will present an
-      important reparative to the dearth of serious scholarship on an era that is
-      referred to as a “golden age” and that plays an outsized and highly mythologized
-      role in the conception of Jewish musical heritage. By placing cantors in dialogue
-      with Yiddish literature and Jewish political movements, I will move the discussion
-      of Jewish sacred music out of its current highly parochialized place and cultivate
-      a more robust approach to this pivotal intellectual and aesthetic movement
-      in Jewish life.
-    </p>
-
-    <h3>
-      <cite>Live davenings</cite>: technologies of ritual learning and the
-      convening of a Jewish sacred music underground
-    </h3>
-    <p>Forthcoming article in <cite>Jewish Social Studies</cite>.</p>
-    <p>
-      At the onset of the 21<sup>st</sup> century, Jewish musicians from across a
-      diverse array of communities have displayed a renewed interest in <i
-        lang="y">khazones</i
-      >, an aestheticized version of cantorial prayer leading associated with a
-      mass mediated pop culture phenomenon in the early 20<sup>th</sup> century.
-      This musical revival of a century old genre of prayer music has been facilitated
-      in part due to a new accessibility of recordings of cantorial prayer performance
-      through the internet. Surreptitiously collected field recordings of cantors
-      at the pulpit, made in disregard for the rules of synagogue comportment, circulated
-      for decades among a small group of collectors in an underground economy of
-      homemade dubbed cassettes. These secret recordings, referred to as “live davenings,”
-      usurp the characteristic ephemerality of prayer to document a 20<sup
-        >th</sup
-      > century aesthetic concept of cantorial music as an art form beyond its ritual
-      function. In the past decade many of these recordings have surfaced on YouTube
-      and file sharing sites, reaching an expanded audience, exposing a new generation
-      to a largely abandoned style of liturgical performance. Through ethnography
-      with elder field recording makers, internet-savvy collectors, and the artists
-      who use the secrets in the live davening archive to build projects of cantorial
-      revival, this article offers an examination of a body of archival material
-      that has not previously been the topic of any scholarly investigation. This
-      exploration of live davenings contributes to a fuller historical picture of
-      the role media plays in determining what constitutes a reliable source of knowledge
-      about Jewish sacred sound in America, arguing that electronically mediated
-      prayer music serves as a form of prosthesis that repairs lost cultural intimacy,
-      protecting against the perceived deterioration of tradition, a crisis that
-      haunts both the cantorial profession and broader discourses within Jewish American
-      culture.
-    </p> -->
+    {
+      projects.map((entry) => (
+        <div class="flex flex-col items-center gap-10 md:flex-row">
+          <img src={entry.data.image} class="w-2/3 object-contain md:w-1/3" />
+          <div class="flex flex-col gap-5">
+            <h3 class="text-2xl font-bold">{entry.data.title}</h3>
+            <p>{entry.data.description}</p>
+            <p class="text-center text-xl">
+              <a
+                href={"/academic/" + entry.slug}
+                class="text-sky-700 underline underline-offset-4"
+              >
+                Read more
+              </a>
+            </p>
+          </div>
+        </div>
+      ))
+    }
 
     <h2 class="text-3xl font-bold">Publications</h2>
 
@@ -497,6 +303,5 @@ import endImage from "../../assets/images/IMG_6187.JPG?url";
       Lockwood, J. “What is Jewish Music?,” “What is a Cantor?,” “What is a
       Shofar?” <cite>My Jewish Learning </cite>, web video series, 2009
     </p>
-    <img src={endImage} alt="" />
   </main>
 </Layout>
