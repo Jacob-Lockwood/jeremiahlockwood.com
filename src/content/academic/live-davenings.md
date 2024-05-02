@@ -2,7 +2,7 @@
 title:
   Live Davenings — technologies of ritual learning and the convening of a Jewish
   sacred music underground
-image: /images/Yiddish-Time-Machine---Square.jpg
+image: /images/Yiddish-Time-Machine---Color.jpg
 description:
   At the onset of the 21st century, Jewish musicians from across a diverse array
   of communities have displayed a renewed interest in khazones, an aestheticized
