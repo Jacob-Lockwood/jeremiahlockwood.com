@@ -17,14 +17,16 @@ const pages = await Promise.all(
 ---
 
 <MainLayout title="Music | Jeremiah Lockwood">
-  <main class="flex flex-col gap-20 px-10 sm:px-20">
+  <main
+    class="mx-auto flex max-w-screen-2xl flex-col gap-20 px-5 sm:px-20 md:px-20"
+  >
     <h1 class="my-10 text-center text-4xl font-bold">Music</h1>
-    <div class="flex flex-col gap-10 md:flex-row">
+    <div class="flex flex-col gap-10 lg:flex-row">
       <figure class="flex-grow">
         <iframe
           src="https://www.youtube.com/embed/d00yCDSjc_8"
           allowfullscreen
-          class="aspect-video w-full"></iframe>
+          class="mx-auto aspect-video w-full max-w-xl"></iframe>
         <figcaption class="text-center">
           Rozo D'Shabbos, The Sway Machinery
         </figcaption>
@@ -33,14 +35,14 @@ const pages = await Promise.all(
         <iframe
           src="https://www.youtube.com/embed/T1T3gzkj6bY"
           allowfullscreen
-          class="aspect-video w-full"></iframe>
+          class="mx-auto aspect-video w-full max-w-xl"></iframe>
         <figcaption class="text-center">
           Live at Sweetwater Music Hall, 2019
         </figcaption>
       </figure>
     </div>
     <div class="flex flex-col gap-20 md:flex-row">
-      <blockquote class="w-full">
+      <blockquote class="mx-auto w-full max-w-xl">
         <p>
           <q>
             The musical story of Jeremiah Lockwood is almost hard to believe.
@@ -51,7 +53,7 @@ const pages = await Promise.all(
           — Joe Tangari, Pitchfork
         </p>
       </blockquote>
-      <blockquote class="w-full">
+      <blockquote class="mx-auto w-full max-w-xl">
         <p>
           <q>
             Jeremiah Lockwood … grew up with two disparate musical mentors. As a
@@ -67,12 +69,12 @@ const pages = await Promise.all(
         </p>
       </blockquote>
     </div>
-    <div class="grid gap-10 text-sm md:grid-cols-2 lg:text-base xl:grid-cols-3">
+    <div class="flex flex-wrap justify-center gap-10 text-sm lg:text-base">
       {
         pages.map(
           (entry) =>
             entry && (
-              <div>
+              <div class="w-full md:w-80 lg:w-96">
                 <a href={`/music/${entry.slug}`} class="relative aspect-square">
                   <img
                     src={entry.data.image}
@@ -82,7 +84,9 @@ const pages = await Promise.all(
                   <div class="absolute bottom-0 w-full bg-sky-200/90 p-5">
                     <h3 class="font-bold">{entry.data.title}</h3>
                     {entry.data.previewText && (
-                      <p class="line-clamp-4">{entry.data.previewText}</p>
+                      <p class="line-clamp-6 md:line-clamp-4">
+                        {entry.data.previewText}
+                      </p>
                     )}
                   </div>
                 </a>
