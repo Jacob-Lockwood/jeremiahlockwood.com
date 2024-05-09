@@ -6,4 +6,9 @@ import solidJs from "@astrojs/solid-js";
 export default defineConfig({
   site: "https://jeremiahlockwood.com",
   integrations: [tailwind(), solidJs()],
+  redirects: {
+    "/misc": "/visual-art/",
+    "/multidisciplinary": "/visual-art/",
+    "/scholarship": "/academic/",
+  },
 });
