@@ -12,23 +12,21 @@ const right = projects.filter((_, i) => i % 2 === 1);
   <main class="px-10">
     <h1 class="mt-10 text-center text-4xl font-bold">Visual Art</h1>
 
-    <div class="mx-auto mt-20 grid max-w-4xl gap-10 md:grid-cols-2">
+    <div class="mx-auto mt-20 grid max-w-4xl gap-5 md:grid-cols-2">
       {
         [left, right].map((projects) => (
-          <div class="flex flex-col gap-10">
+          <div class="flex flex-col">
             {projects.map((entry) => (
-              <div class="mb-10 flex flex-col gap-5 text-center">
+              <a
+                href={"/visual-art/" + entry.slug}
+                class="mb-10 flex flex-col gap-5 p-5 text-center hover:bg-sky-100/30"
+              >
                 <h3 class="text-2xl font-bold">{entry.data.title}</h3>
                 <img src={entry.data.image} class="object-contain" />
-                <p class="text-xl">
-                  <a
-                    href={"/academic/" + entry.slug}
-                    class="text-sky-700 underline underline-offset-4"
-                  >
-                    See more
-                  </a>
+                <p class="text-xl text-sky-700 underline underline-offset-4">
+                  See more
                 </p>
-              </div>
+              </a>
             ))}
           </div>
         ))
