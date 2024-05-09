@@ -86,8 +86,8 @@ at times reviled by conservative critics for their lack of adherence to norms of
 religious orthodoxy, even as they were subjects of public adulation. The
 emergence of new media opened cantorial performance to artists with
 controversial identities, including women cantors, often referred to in Yiddish
-as <i lang="y">khazentes</i>. The <i lang="y">khazente</i> phenomenon, that
-seems to have begun in the 1910s, brought women cantors to the forefront of
+as <i lang="y">khazntes</i>. The <i lang="y">khaznte</i> phenomenon, that seems
+to have begun in the 1910s, brought women cantors to the forefront of
 popularity, even as they were rejected as ritual leaders in synagogues. The
 study of the cantorial golden age will bring these important yet forgotten
 artists into the light of day and reevaluate the gendered history of liturgy and
@@ -95,7 +95,7 @@ aesthetics by attending to their work.
 
 <cite>Melody Like a Confession</cite> will address the central themes of the
 cantorial populist movement in thematically organized chapters. I have already
-completed a draft of a chapter on the <i lang="y">khazentes</i>, early
+completed a draft of a chapter on the <i lang="y">khazntes</i>, early
 20<sup>th</sup> century women cantors. I have developed a prospectus and
 research agenda for the other chapters of the book. The proposed chapter are: an
 introduction that will offer a synthetic approach to the representation of
