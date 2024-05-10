@@ -14,7 +14,9 @@ of the year we are going through and the play I wrote was of course very strange
 and perhaps not completely successful, none the less I would like to share with
 you the words of the five ghosts who visited me, see below.
 
-<iframe src="https://www.instagram.com/p/C4zJEhXNhAC/embed/"></iframe>
+<div class="sm:w-96 mx-auto">
+  <iframe src="https://www.instagram.com/p/C4zJEhXNhAC/embed/" class="!aspect-[9/16]"></iframe>
+</div>
 
 Purim Spectacle – Five Ghosts
 
