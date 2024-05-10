@@ -1,0 +1,107 @@
+---
+import Layout from "../../layouts/MainLayout.astro";
+import { getCollection } from "astro:content";
+
+const projects = await getCollection("visual-art");
+
+const left = projects.filter((_, i) => i % 2 === 0);
+const right = projects.filter((_, i) => i % 2 === 1);
+---
+
+<Layout title="Visual Art | Jeremiah Lockwood">
+  <main class="px-10">
+    <h1 class="mt-10 text-center text-4xl font-bold">Visual Art</h1>
+
+    <div class="mx-auto mt-20 grid max-w-4xl gap-5 md:grid-cols-2">
+      {
+        [left, right].map((projects) => (
+          <div class="flex flex-col">
+            {projects.map((entry) => (
+              <a
+                href={"/visual-art/" + entry.slug}
+                class="mb-10 flex flex-col gap-5 p-5 text-center hover:bg-sky-100/30"
+              >
+                <h3 class="text-2xl font-bold">{entry.data.title}</h3>
+                <img src={entry.data.image} class="object-contain" />
+                <p class="text-xl text-sky-700 underline underline-offset-4">
+                  See more
+                </p>
+              </a>
+            ))}
+          </div>
+        ))
+      }
+    </div>
+
+    <!-- 
+    <div class="mx-auto mt-20 grid max-w-4xl gap-10 md:grid-cols-2">
+      {
+        projects.map((entry) => (
+          <div class="mb-10 flex flex-col gap-5 text-center">
+            <h3 class="text-2xl font-bold">{entry.data.title}</h3>
+            <img src={entry.data.image} class="object-contain" />
+            <p class="text-xl">
+              <a
+                href={"/academic/" + entry.slug}
+                class="text-sky-700 underline underline-offset-4"
+              >
+                See more
+              </a>
+            </p>
+          </div>
+        ))
+      }
+    </div>
+    -->
+  </main>
+</Layout>
+
+<!-- ---
+import Layout from "../layouts/MainLayout.astro";
+import Modal from "../components/ImageModal.svelte";
+
+import gosAccImage from "../assets/images/The Gospel According to Carolina Slim annotated set list.JPG?url";
+const bibUFOImages = await Promise.all(
+  Object.values(
+    import.meta.glob(
+      "../assets/images/Biblical_UFO_Abduction_in_the_Catskills/*",
+      {
+        as: "url",
+      },
+    ),
+  ).map((imp) => imp()),
+);
+const canDiaImages = await Promise.all(
+  Object.values(
+    import.meta.glob("../assets/images/cantorial-diagrams/*", { as: "url" }),
+  ).map((imp) => imp()),
+);
+---
+
+<Layout
+  title="Multidisciplinary Work | Jeremiah Lockwood"
+  active="multidisciplinary work"
+>
+  <main>
+    <h1>Multidisciplinary Work</h1>
+
+    <section>
+      <Modal
+        images={bibUFOImages}
+        title="Biblical UFO Abduction in the Catskills"
+        client:load
+      />
+      <Modal
+        images={[gosAccImage]}
+        title="The Gospel According to Carolina Slim"
+        client:load
+      />
+      <Modal images={canDiaImages} title="Cantorial Diagrams" client:load />
+    </section>
+
+    <aside>
+      <p>…And more soon</p>
+    </aside>
+  </main>
+</Layout>
+ -->

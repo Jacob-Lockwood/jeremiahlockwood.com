@@ -16,27 +16,34 @@ const pages = await Promise.all(
 );
 ---
 
-<MainLayout title="Music | Jeremiah Lockwood" active="music">
-  <main>
-    <h1>Music</h1>
-    <div class="split">
-      <figure>
+<MainLayout title="Music | Jeremiah Lockwood">
+  <!-- TODO max-w-screen-2xl is hacky and might annoy someone with a big screen -->
+  <main
+    class="mx-auto flex max-w-screen-2xl flex-col gap-20 px-5 sm:px-20 md:px-20"
+  >
+    <h1 class="my-10 text-center text-4xl font-bold">Music</h1>
+    <div class="flex flex-col gap-10 lg:flex-row">
+      <figure class="flex-grow">
         <iframe
           src="https://www.youtube.com/embed/d00yCDSjc_8"
-          frameborder="0"
-          allowfullscreen></iframe>
-        <figcaption>Rozo D'Shabbos, The Sway Machinery</figcaption>
+          allowfullscreen
+          class="mx-auto aspect-video w-full max-w-xl"></iframe>
+        <figcaption class="text-center">
+          Rozo D'Shabbos, The Sway Machinery
+        </figcaption>
       </figure>
-      <figure>
+      <figure class="flex-grow">
         <iframe
           src="https://www.youtube.com/embed/T1T3gzkj6bY"
-          frameborder="0"
-          allowfullscreen></iframe>
-        <figcaption>Live at Sweetwater Music Hall, 2019</figcaption>
+          allowfullscreen
+          class="mx-auto aspect-video w-full max-w-xl"></iframe>
+        <figcaption class="text-center">
+          Live at Sweetwater Music Hall, 2019
+        </figcaption>
       </figure>
     </div>
-    <div class="split">
-      <blockquote>
+    <div class="flex flex-col gap-20 md:flex-row">
+      <blockquote class="mx-auto w-full max-w-xl">
         <p>
           <q>
             The musical story of Jeremiah Lockwood is almost hard to believe.
@@ -44,14 +51,14 @@ const pages = await Promise.all(
             Jewish cantor, and Carolina Slim, a well-known blues guitarist. All
             those influences crystallize into something unified.
           </q>
-          -- Joe Tangari, Pitchfork
+          — Joe Tangari, Pitchfork
         </p>
       </blockquote>
-      <blockquote>
+      <blockquote class="mx-auto w-full max-w-xl">
         <p>
           <q>
-            Jeremiah Lockwood &mldr; grew up with two disparate musical mentors.
-            As a boy, Lockwood sang in the choir of his grandfather, Jacob
+            Jeremiah Lockwood … grew up with two disparate musical mentors. As a
+            boy, Lockwood sang in the choir of his grandfather, Jacob
             Konigsberg, a renowned cantor who led the High Holidays services at
             the Loop Synagogue, in Chicago, for several decades. When he was
             fourteen, Lockwood began a lifelong apprenticeship with the
@@ -59,21 +66,32 @@ const pages = await Promise.all(
             mainly consisted of busking alongside the impeccably dressed Slim in
             Manhattan subway stations.
           </q>
-          -- The New Yorker
+          — The New Yorker
         </p>
       </blockquote>
     </div>
-    <div class="grid">
+    <div class="flex flex-wrap justify-center gap-10 text-sm lg:text-base">
       {
         pages.map(
           (entry) =>
             entry && (
-              <div class="post">
-                <a href={`/music/${entry.slug}`}>
-                  <img src={entry.data.image} alt={entry.data.title} />
-                  <div class="card">
-                    <h3>{entry.data.title}</h3>
-                    {entry.data.previewText && <p>{entry.data.previewText}</p>}
+              <div class="w-full md:w-80 lg:w-96">
+                <a
+                  href={`/music/${entry.slug}`}
+                  class="relative block aspect-square h-full w-full"
+                >
+                  <img
+                    src={entry.data.image}
+                    alt={entry.data.title}
+                    class="z-0 aspect-square w-full object-cover"
+                  />
+                  <div class="absolute bottom-0 z-10 w-full bg-sky-200/90 p-5">
+                    <h3 class="font-bold">{entry.data.title}</h3>
+                    {entry.data.previewText && (
+                      <p class="line-clamp-6 md:line-clamp-4">
+                        {entry.data.previewText}
+                      </p>
+                    )}
                   </div>
                 </a>
               </div>
@@ -83,80 +101,3 @@ const pages = await Promise.all(
     </div>
   </main>
 </MainLayout>
-
-<style>
-  main {
-    margin: 0;
-    padding: 0;
-  }
-  h1 {
-    text-align: center;
-  }
-  .grid {
-    padding: 1em;
-    display: grid;
-    gap: 1em;
-    grid-template-columns: repeat(3, 1fr);
-  }
-  .post {
-    border: 1px solid;
-    position: relative;
-    overflow: hidden;
-    aspect-ratio: 1 / 1;
-  }
-  .post .card {
-    color: black;
-    padding: 1em;
-    background: hsl(0 15% 80% / 0.9);
-    position: absolute;
-    z-index: 5;
-    inset: 0 0 auto 0;
-    width: 100%;
-    height: 100%;
-    transform: translateY(-100%);
-    transition: transform 300ms;
-    overflow: hidden;
-  }
-  .post .card h3 {
-    margin-bottom: 0.5rem;
-  }
-  .post .card p {
-    font-size: clamp(0.4rem, 1vw + 0.5rem);
-  }
-  .post img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-  .post:hover .card {
-    transform: none;
-  }
-
-  @media screen and (max-width: 1100px) {
-    .post .card {
-      transform: none;
-      height: auto;
-    }
-  }
-
-  @media screen and (max-width: 700px) {
-    .grid {
-      grid-template-columns: 1fr 1fr;
-      /* aspect-ratio: 1 / 2; */
-    }
-    .post .card p {
-      display: none;
-    }
-  }
-
-  aside {
-    font-size: 1.5em;
-    line-height: 1.2em;
-    margin: 5em auto;
-    max-width: clamp(30ch, 75vw, 70ch);
-  }
-
-  blockquote p {
-    font-size: 1.3em;
-  }
-</style>

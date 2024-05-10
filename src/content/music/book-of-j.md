@@ -6,8 +6,6 @@ previewText: Old worlds collide in Book of J, as musicians Jewlia Eisenberg (Cha
 
 **This page is a memorial for Jeremiah's former band with Jewlia Eisenberg (of blessed memory)**
 
-## BOOK OF J
-
 <div class="split"><figure><iframe src="https://www.youtube.com/embed/S0PLitRnK0U" frameborder="0" allowfullscreen=""></iframe><figcaption>Journey Home</figcaption></figure><figure><iframe src="https://www.youtube.com/embed/LMr7PefrOKg" frameborder="0" allowfullscreen=""></iframe><figcaption>Alevanta Mordekai</figcaption></figure></div>
 
 Old worlds collide in Book of J, as musicians Jewlia Eisenberg (Charming Hostess) and Jeremiah Lockwood (The Sway Machinery) take inspiration from the intersection of the sacred and the radical to create hit songs from out of the depths of American psalmody, Yiddish folklore, and international Jewish liturgical traditions.

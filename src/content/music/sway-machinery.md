@@ -18,11 +18,11 @@ between communities, and touch the past. Like its debut project, Hidden Melodies
 which also drew upon High Holidays liturgy, The Dream Past offers an expansive vision of what
 can be achieved through commitment to ancestor voices and reciprocity with the dead. This
 new work turns to a lost and now rediscovered archive of bootleg recordings of live prayer
-leading as the source material for its ecstatic transformation.</p><iframe width="560" height="315" src="https://www.youtube.com/embed/u6POXi5aqaA?si=5iecG-4U0y8KIxp4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></aside>
+leading as the source material for its ecstatic transformation.</p><iframe src="https://www.youtube.com/embed/u6POXi5aqaA?si=5iecG-4U0y8KIxp4" title="YouTube video player" allowfullscreen></iframe></aside>
 
-## The Sway Machinery
+> This unclassifiable, uplifting band is led by the singer and guitarist Jeremiah Lockwood, the grandson of the renowned cantor Jacob Konigsberg, whose choir Lockwood once sang in. Lockwood's diverse musical influences also include a nearly two-decade apprenticeship in the New York subways with the legendary Piedmont blues master Carolina Slim and a collaboration with several prominent Malian musicians which took place on a long visit there a few years ago.
 
-> "This unclassifiable, uplifting band is led by the singer and guitarist Jeremiah Lockwood, the grandson of the renowned cantor Jacob Konigsberg, whose choir Lockwood once sang in. Lockwood's diverse musical influences also include a nearly two-decade apprenticeship in the New York subways with the legendary Piedmont blues master Carolina Slim and a collaboration with several prominent Malian musicians which took place on a long visit there a few years ago." --The New Yorker
+— The New Yorker
 
 <div class="split"><figure><iframe src="https://www.youtube.com/embed/TErWytpEznQ" frameborder="0" allowfullscreen=""></iframe><figcaption>Live at the Krakow Jewish Culture Festival</figcaption></figure><figure><iframe src="https://www.youtube.com/embed/HmtFX-r-0p8" frameborder="0" allowfullscreen=""></iframe><figcaption>Gawad Teriamou, featuring Khaira Arby</figcaption></figure></div>
 
@@ -44,6 +44,8 @@ In March 2015, released their third LP, entitled Purity and Danger, juxtaposing 
 
 ### Albums
 
+<div class="link-break">
+
 You Will Love No One But Me (3rd Generation Recordings, 2015)
 
 [http://www.3rdgenerationrecordings.com/products/562612-the-sway-machinery-you-will-love-no-one-but-me-preorder](http://www.3rdgenerationrecordings.com/products/562612-the-sway-machinery-you-will-love-no-one-but-me-preorder)
@@ -63,3 +65,5 @@ Hidden Melodies Revealed (JDub Records, 2009)
 The Sway Machinery EP (JDub Records, 2008)
 
 [https://open.spotify.com/album/1Oaeyv4jMiHMMbQWpJqfmT](https://open.spotify.com/album/1Oaeyv4jMiHMMbQWpJqfmT)
+
+</div>

@@ -1,0 +1,307 @@
+---
+import Layout from "../../layouts/MainLayout.astro";
+import coverImage from "../../assets/images/Jeremiah smaller.png?url";
+import resume from "../../assets/images/Jeremiah_Lockwood_CV2023-24.pdf?url";
+import { getEntryBySlug } from "astro:content";
+// import endImage from "../../assets/images/IMG_6187.JPG?url";
+const projects = await Promise.all([
+  getEntryBySlug("academic", "golden-ages"),
+  getEntryBySlug("academic", "melody-like-a-confession"),
+  getEntryBySlug("academic", "live-davenings"),
+]);
+---
+
+<Layout title="Scholarship | Jeremiah Lockwood">
+  <main class="mx-auto flex max-w-4xl flex-col gap-10 break-words px-10">
+    <h1 class="mt-10 text-center text-4xl font-bold">Academic</h1>
+    <div>
+      <img
+        src={coverImage}
+        alt="Photo of Jeremiah"
+        class="mx-auto mb-10 w-2/3 object-contain sm:float-left sm:mx-0 sm:mb-1 sm:mr-5 sm:w-1/2 lg:w-1/3"
+      />
+      <p>
+        Jeremiah Lockwood is a scholar and musician, working in the fields of
+        Jewish studies, performance studies and ethnomusicology. His work
+        engages with issues arising from peering into the archive and imagining
+        the power of “lost” forms of expression to articulate keenly felt needs
+        in the present. Both his music performance and scholarship gravitate
+        towards the Jewish liturgical music and Yiddish expressive culture of
+        the early 20<sup>th</sup>
+        century and the reverberations of this cultural moment in present day artistic
+        and religious communities. Jeremiah’s research considers the work of cantors
+        as arbiters of social, intellectual and aesthetic change in times of crisis
+        and cultural transformation. Jeremiah received his PhD from the Stanford
+        University Graduate School of Education Concentration in Education and Jewish
+        Studies in 2021. He is currently a Fellow at the University of Pennsylvania
+        Katz Center for Advanced Judaic Studies.
+      </p>
+    </div>
+    <p>
+      In 2021-22, Jeremiah was a Research Fellow at the UCLA Milken Center for
+      Jewish American life. As part of this fellowship, he wrote a 30-part blog
+      series offering snapshots of his archival and ethnographic research. <a
+        target="_blank"
+        href="https://schoolofmusic.ucla.edu/resources/conversations-words-music-from-the-american-jewish-experience/"
+        class="text-sky-800 underline underline-offset-4"
+      >
+        CLICK HERE TO EXPLORE THE BLOG.</a
+      > Jeremiah is the Lead Researcher for the Cantorial and Synagogue Music Archive
+      (CSMA), an ongoing project of the Cantors Assembly Foundation. In this role,
+      he works with elder cantors to preserve, digitize and disseminate their personal
+      collections of unique 19<sup>th</sup> and 20<sup>th</sup> century cantorial
+      musical scores. The archive that is being built is currently available online
+      even as it continues to grow. <a
+        target="_blank"
+        href="https://archive.cantors.org/"
+        class="text-sky-800 underline underline-offset-4"
+      >
+        CLICK HERE TO VISIT THE CSMA ARCHIVE.</a
+      >
+      Jeremiah was a 2022-23 Fellow at the Yale Institute of Sacred Music.
+    </p>
+    <div class="text-center">
+      <p class="mb-2 text-2xl">Download Jeremiah's Resume:</p>
+      <a
+        href={resume}
+        download="Jeremiah_Lockwood_CV2023-24.pdf"
+        class="text-xl underline underline-offset-8"
+      >
+        Jeremiah_Lockwood_CV2023-24.pdf
+      </a>
+    </div>
+    <p>
+      Jeremiah was the 2019-20 recipient of the YIVO Kremen Memorial Fellowship
+      in East European Arts, Music and Theater, the 2020 AJS Women's Caucus
+      innovative scholarship award and the 2021 Salo Baron New Voices in Jewish
+      Studies Award. His writing has been published in
+      <cite>Religion and American Culture</cite>,
+      <cite>Studies in American Jewish Literature</cite>,
+      <cite>Germanica</cite>, and <cite>In geveb</cite>, as well as in popular
+      publications such as <cite>Tablet</cite> and the <cite>Forward</cite>.
+    </p>
+    <p>
+      Jeremiah’s book, <cite>Golden Ages</cite>, is an ethnographic study of
+      young singers in the contemporary Brooklyn Hasidic community who base
+      their aesthetic explorations of the culturally intimate space of prayer on
+      the gramophone-era cantorial golden age. Jeremiah Lockwood proposes a view
+      of their work as a nonconforming social practice that calls upon the
+      sounds and structures of Jewish sacred musical heritage to disrupt the
+      aesthetics and power hierarchies of their conservative community, defying
+      institutional authority and pushing at normative boundaries of sacred and
+      secular. Beyond its role as a desirable art form, golden age cantorial
+      music offers aspiring Hasidic singers a form of Jewish cultural
+      productivity in which artistic excellence, maverick outsider status, and
+      sacred authority are aligned.
+    </p>
+
+    <h2 class="text-3xl font-bold">Projects</h2>
+
+    {
+      projects.map((entry) => (
+        <div class="flex flex-col items-center gap-10 md:flex-row">
+          <img src={entry.data.image} class="w-2/3 object-contain md:w-1/3" />
+          <div class="flex flex-col gap-5">
+            <h3 class="text-2xl font-bold">{entry.data.title}</h3>
+            <p>{entry.data.description}</p>
+            <p class="text-center text-xl">
+              <a
+                href={"/academic/" + entry.slug}
+                class="text-sky-700 underline underline-offset-4"
+              >
+                Read more
+              </a>
+            </p>
+          </div>
+        </div>
+      ))
+    }
+
+    <h2 class="text-3xl font-bold">Publications</h2>
+
+    <h3 class="text-2xl font-bold">BOOKS</h3>
+    <p>
+      Lockwood, Jeremiah.
+      <cite
+        >Golden Ages: Hasidic Singers and Cantorial Revival in the Digital Era.
+      </cite>
+      UC Press in the Jewish Cultures and History Series. 2024.
+    </p>
+    <p>
+      <a
+        class="text-sky-800 underline"
+        href="https://www.ucpress.edu/book/9780520396425/golden-ages"
+        >https://www.ucpress.edu/book/9780520396425/golden-ages</a
+      >
+    </p>
+
+    <h3 class="text-2xl font-bold">ARTICLES AND CHAPTERS</h3>
+
+    <p>
+      Lockwood, J. “<i lang="y">Live davenings</i>: technologies of ritual
+      learning and the convening of a Jewish sacred music underground.”
+      <cite>Jewish Social Studies.</cite> Forthcoming.
+    </p>
+    <p>
+      Lockwood, J. “Jewlia Eisenberg and Queer Piyut.”
+      <cite>Contemporary Jewry.</cite> 2023.
+    </p>
+    <p>
+      Lockwood, J. “Hassidic Cantors ‘Out of Context’: Venues of Contemporary
+      Cantorial Performance.”
+      <cite>Oxford Handbook of Jewish Music.</cite> 2023.
+    </p>
+    <p>
+      Lockwood, J. “Prayer and crime: Cantor Elias Zaludkovsky’s concert
+      performance season in 1924 Poland.”
+      <cite>In Geveb: A Journal of Yiddish Studies.</cite> 2022.
+      <a
+        class="text-sky-800 underline"
+        target="_blank"
+        href="https://ingeveb.org/articles/prayer-and-crime"
+      >
+        https://ingeveb.org/articles/prayer-and-crime
+      </a>
+    </p>
+    <p>
+      Lockwood, J. “What is the cantorial ‘Golden Age’?
+      <i lang="y">hefker khazones</i>
+      (wanton cantorial music) or ‘the key to the Jewish soul’?”
+      <cite> Cantors Assembly 75th Anniversary Journal.</cite> 2022.
+      <a
+        class="text-sky-800 underline"
+        href="https://www.academia.edu/86287460/What_Is_the_Cantorial_Golden_Age_Hefker_Khazones_or_the_Key_to_the_Jewish_Soul_"
+        >https://www.academia.edu/86287460/What_Is_the_Cantorial_Golden_Age_Hefker_Khazones_or_the_Key_to_the_Jewish_Soul_</a
+      >
+    </p>
+    <p>
+      Lockwood, J.
+      <span lang="fr">
+        “Prière et crime dans la Pologne de l’entre-deux guerre: L’agenda
+        musical 1924 du chantre Elias Zaludkovsky.”
+      </span>
+      Translated by Marie Schumacher-Brunhes. <cite>Germanica</cite>, no. 67.
+      December 2020.
+    </p>
+    <p>
+      Lockwood, J. and Ari Kelman. "From Aesthetics to Experience: How Changing
+      Conceptions of Prayer Changed the Sound of Jewish Worship."
+      <cite>Religion and American Culture: A Journal of Interpretation.</cite>
+      2020.
+      <a
+        class="text-sky-800 underline"
+        href="https://www.academia.edu/85943555/From_Aesthetics_to_Experience_How_Changing_Conceptions_of_Prayer_Changed_the_Sound_of_Jewish_Worship"
+        >https://www.academia.edu/85943555/From_Aesthetics_to_Experience_How_Changing_Conceptions_of_Prayer_Changed_the_Sound_of_Jewish_Worship
+      </a>
+    </p>
+    <p>
+      Lockwood, J. “A Cantorial Lesson: the lineage of a learning encounter.”
+      <cite>Studies in American Jewish Literature</cite>, Special Issue,
+      American Jews and Music, 2019.
+      <a
+        class="text-sky-800 underline"
+        href="https://www.academia.edu/40580083/A_Cantorial_Lesson_The_Lineage_of_a_Learning_Encounter"
+        >https://www.academia.edu/40580083/A_Cantorial_Lesson_The_Lineage_of_a_Learning_Encounter
+      </a>
+    </p>
+    <p>
+      Kirzane, J., et al. “Teaching Guide to Erotic Yiddish Poetry.”
+      <cite>In Geveb: A Journal of Yiddish Studies</cite>, 2019.
+      <a
+        class="text-sky-800 underline"
+        href="https://ingeveb.org/pedagogy/teaching-guide-to-erotic-yiddish-poetry"
+        >https://ingeveb.org/pedagogy/teaching-guide-to-erotic-yiddish-poetry
+      </a>
+    </p>
+    <p>
+      Kelman, Ari Y., et al. “Safe and on the Sidelines: Jewish Students and the
+      Israel-Palestine Conflict on Campus.” A study by the Research Group of the
+      Stanford Concentration in Education and Jewish Studies, 2017.
+    </p>
+
+    <h3 class="text-2xl font-bold">BLOG</h3>
+
+    <p>
+      <cite>
+        Conversations: Words and Music from the American Jewish Experience.
+      </cite> Thirty-part series for the UCLA Milken Center for American Jewish Experience.
+      2021-2.
+
+      <a
+        class="text-sky-800 underline"
+        href="https://schoolofmusic.ucla.edu/resources/conversations-words-music-from-the-american-jewish-experience/"
+        >https://schoolofmusic.ucla.edu/resources/conversations-words-music-from-the-american-jewish-experience/</a
+      >
+    </p>
+
+    <h3 class="text-2xl font-bold">BOOK REVIEWS</h3>
+    <p>
+      Lockwood, J. review of <cite>
+        The Lost World of Russia’s Jews: Ethnography and Folklore in the Pale of
+        Settlement.
+      </cite> by Abraham Rechtman, Nathaniel Deutsch and Noh Barrera.
+      <cite>Ab Imperio</cite>, 2022.
+    </p>
+    <p>
+      Lockwood, J. review of <cite>
+        Jewish Religious Music in Nineteenth-Century America: Restoring the
+        Synagogue Soundtrack.
+      </cite> by Judah Cohen. <cite>Musica Judaica Online Reviews</cite>, 2020.
+      <a
+        class="text-sky-800 underline"
+        href="https://mjoreviews.org/2020/10/30/jewish-religious-music-in-nineteenth-century-america-restoring-the-synagogue-soundtrack/"
+        >https://mjoreviews.org/2020/10/30/jewish-religious-music-in-nineteenth-century-america-restoring-the-synagogue-soundtrack/
+      </a>
+    </p>
+
+    <h3 class="text-2xl font-bold">SELECTED JOURNALISM</h3>
+    <p>
+      Lockwood, J. “Performing the High Holidays,“ <cite>Tablet</cite>, 2021
+    </p>
+    <p>
+      Lockwood, J. “Golden Ages: Cantors and their Ghosts”
+      <cite>Jewish Culture Festival: News</cite>, 2020
+    </p>
+    <p>
+      Lockwood, J. “Blues Man of the Dirt” <cite>Satellite Magazine</cite>, 2015
+    </p>
+    <p>
+      Lockwood, J. “Legendary Voices: The Education of the Great Cantors”
+      <cite>Jewish Currents</cite>, 2014
+      <a
+        class="text-sky-800 underline"
+        href="https://archive.jewishcurrents.org/legendary-voices-the-education-of-the-great-cantors/"
+        >https://archive.jewishcurrents.org/legendary-voices-the-education-of-the-great-cantors/
+      </a>
+    </p>
+    <p>
+      Lockwood, J. “Saving Bulgaria's Jews: Church, State and Citizens United”
+      <cite>Jewish Currents</cite>, 2013
+    </p>
+    <p>Lockwood, J. “Songs of Desert Wanderers”, <cite>Tablet</cite>, 2012</p>
+    <p>
+      Lockwood, J. “Searching the Torah's Seams: A Roundtable”
+      <cite>Shm'a</cite>, 2012
+    </p>
+    <p>
+      Lockwood, J. “A Year of Revolutionary Nigunim”
+      <cite>The Jewish Daily Forward</cite>, 2011
+      <a
+        class="text-sky-800 underline"
+        href="https://forward.com/culture/134799/a-year-of-revolutionary-nigunim/"
+        >https://forward.com/culture/134799/a-year-of-revolutionary-nigunim/
+      </a>
+    </p>
+    <p>
+      Lockwood, J. “The Shofar and the Power of Memory” <cite>Shm'a</cite>, 2010
+    </p>
+    <p>
+      Lockwood, J. “Out of Africa: Hazanut and the Blues”
+      <cite>The Jewish Daily Forward</cite>, 2009
+    </p>
+    <p>
+      Lockwood, J. “What is Jewish Music?,” “What is a Cantor?,” “What is a
+      Shofar?” <cite>My Jewish Learning </cite>, web video series, 2009
+    </p>
+  </main>
+</Layout>

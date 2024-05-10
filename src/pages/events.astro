@@ -1,5 +1,5 @@
 ---
-import Layout from "src/layouts/MainLayout.astro";
+import Layout from "../layouts/MainLayout.astro";
 import events from "../events.json";
 import linkify from "linkify-string";
 
@@ -8,22 +8,26 @@ const addressToLink = (address: string) =>
   new URLSearchParams({ api: "1", query: encodeURIComponent(address) });
 ---
 
-<Layout title="Events | Jeremiah Lockwood" active="events">
-  <h1>Events</h1>
-  <main>
+<Layout title="Events | Jeremiah Lockwood">
+  <h1 class="mx-auto mb-20 mt-10 px-10 text-center text-4xl font-bold">
+    Upcoming Events
+  </h1>
+  <main class="flex flex-wrap justify-center gap-20 px-10">
     {
       events.length ? (
-        events.map(({ title, date, address, description, long }) => (
-          <div class:list={["event", { long }]}>
+        events.map(({ title, date, address, description }) => (
+          <div class="flex w-full flex-col gap-2 text-xl sm:w-64">
             <p>{date}</p>
             <p>{title}</p>
-            {address && (
-              <p>
-                <a href={addressToLink(address)}>{address}</a>
-              </p>
-            )}
-            {description.map((paragraph) => (
-              <p set:html={linkify(paragraph)} />
+            <a href={addressToLink(address)} class="text-sky-800">
+              {address}
+            </a>
+            {description.map((line) => (
+              <p
+                set:html={linkify(line, {
+                  className: "text-sky-800 break-all",
+                })}
+              />
             ))}
           </div>
         ))
@@ -33,34 +37,3 @@ const addressToLink = (address: string) =>
     }
   </main>
 </Layout>
-
-<style>
-  main {
-    display: flex;
-    flex-wrap: wrap;
-  }
-  h1 {
-    text-align: center;
-  }
-  h2 {
-    display: block;
-  }
-  .event {
-    width: 35ch;
-    padding: 2em;
-    margin: 2em;
-    line-height: 1.4;
-    font-size: 1.2rem;
-    word-wrap: break-word;
-  }
-  .event.long {
-    width: 70ch;
-  }
-  .event a {
-    display: block;
-  }
-  .event p {
-    padding: 0;
-    margin: 0.8rem 0;
-  }
-</style>

@@ -1,13 +1,14 @@
 ---
 import Layout from "../layouts/MainLayout.astro";
-const heroImage = "/images/Jeremiah.jpg";
 ---
 
-<Layout title="Jeremiah Lockwood" active="home">
-  <header class="split-ish">
-    <div class="hero__text">
-      <h1>Jeremiah Lockwood</h1>
-      <p class="hero__para">
+<Layout title="Jeremiah Lockwood">
+  <header
+    class="flex flex-col items-center justify-center gap-10 px-10 md:flex-row md:px-20"
+  >
+    <div class="max-w-prose text-xl">
+      <h1 class="mb-5 text-4xl font-bold">Jeremiah Lockwood</h1>
+      <p>
         Jeremiah Lockwood is a scholar and a storyteller; a singer, guitarist
         and composer with an expansive knowledge of musical traditions and
         techniques that range from cantorial sacred music to Piedmont blues. His
@@ -16,51 +17,76 @@ const heroImage = "/images/Jeremiah.jpg";
         to articulate keenly felt needs in the present.
       </p>
     </div>
-    <img class="hero__image" src={heroImage} />
+    <img src="/images/Jeremiah.jpg" class="w-80 object-contain" />
   </header>
-  <main class="main">
-    <aside class="mailing-list">
-      <a href="http://eepurl.com/goSc9D" target="_blank">
-        Click here to join the mailing list.
-      </a>
-    </aside>
-    <aside style="border:5px solid black;">
-      <h2>
-        Golden Ages: Hasidic Singers and Cantorial Revival in the Digital Era
-      </h2>
-      <p>Book release with California University Press, February 2024</p>
+  <section class="my-20 px-10 text-center">
+    <a
+      href="http://eepurl.com/goSc9D"
+      target="_blank"
+      class="text-2xl underline underline-offset-8"
+    >
+      Click here to join the mailing list.
+    </a>
+  </section>
+  <section class="my-20 px-10 text-center">
+    <a href="/events" class="text-2xl underline underline-offset-8">
+      Click here to find out about Jeremiah's upcoming events.
+    </a>
+  </section>
+  <section class="mx-auto max-w-6xl p-5 sm:p-10">
+    <div
+      class="flex flex-col gap-5 border-2 border-dashed border-sky-800 p-5 text-center sm:p-10"
+    >
+      <p>Jeremiah's first book is out now:</p>
+      <div class="flex flex-col items-center gap-10 lg:flex-row">
+        <img
+          src="/images/golden_ages_cover.jpg"
+          alt="Cover image for Golden Ages"
+          class="w-80 object-contain"
+        />
+        <div class="flex max-w-3xl flex-col gap-5 text-left">
+          <h2 class="text-3xl font-bold">
+            Golden Ages: Hasidic Singers and Cantorial Revival in the Digital
+            Era
+          </h2>
+          <p>Book release with California University Press</p>
+          <p class="text-center">
+            <a
+              href="https://www.ucpress.edu/book/9780520396425/golden-ages"
+              target="_blank"
+              class="text-xl underline underline-offset-8"
+            >
+              Order your copy here
+            </a>
+          </p>
+          <p>
+            <i>
+              Golden Ages: Hasidic Singers and Cantorial Revival in the Digital
+              Era
+            </i> relates the engaging stories of a group of non-conformist musicians
+            in the New York Chassidic community. Cantorial revivalists are singers
+            who have immersed themselves in the archive of early 20th century commercial
+            Jewish liturgical records, approaching them as a source to build performance
+            identities and musical style. The work of cantorial revivalists is a
+            product of the digital era, shaped both by access to internet-based archival
+            sources and social media platforms for self- promotion. More frequently
+            heard online, in private parties and in concert venues than in synagogues,
+            the work of cantorial revival pushes at normative associations with Jewish
+            prayer, blurring the line between ritual and art.
+          </p>
+        </div>
+      </div>
       <p>
-        <a
-          href="https://www.ucpress.edu/book/9780520396425/golden-ages"
-          target="_blank">Order your copy here</a
-        >
+        <a href="/scholarship/#golden-ages">
+          Read more about <span class="underline underline-offset-2"
+            >Golden Ages</span
+          >
+        </a>
       </p>
-      <img
-        src="/images/golden_ages_cover.jpg"
-        alt=""
-        style="display:block;width:80%;margin:2rem auto 0;"
-      />
-      <p>
-        <i>
-          Golden Ages: Hasidic Singers and Cantorial Revival in the Digital Era
-        </i> relates the engaging stories of a group of non-conformist musicians
-        in the New York Chassidic community. Cantorial revivalists are singers who
-        have immersed themselves in the archive of early 20th century commercial
-        Jewish liturgical records, approaching them as a source to build performance
-        identities and musical style. The work of cantorial revivalists is a product
-        of the digital era, shaped both by access to internet-based archival sources
-        and social media platforms for self- promotion. More frequently heard online,
-        in private parties and in concert venues than in synagogues, the work of
-        cantorial revival pushes at normative associations with Jewish prayer, blurring
-        the line between ritual and art.
-      </p>
-      <p style="text-align:center;">
-        <a href="/scholarship/#golden-ages"
-          >Read more about <u>Golden Ages</u></a
-        >
-      </p>
-    </aside>
-    <p class="main__para">
+    </div>
+  </section>
+  <main class="mx-auto flex max-w-prose flex-col gap-10 px-10 pt-20">
+    <p>
       Jeremiah Lockwood is a scholar and musician, working in the fields of
       Jewish studies, performance studies and ethnomusicology. His work engages
       with issues arising from peering into the archive and imagining the power
@@ -75,16 +101,23 @@ const heroImage = "/images/Jeremiah.jpg";
       Fellow for Advanced Judaic Research at the University of Pennsylvania. His
       first book, <i
         >Golden Ages: Hasidic singers and cantorial revival in the digital era</i
-      >, will be published by University of California Press in February 2024.
+      >, was published by University of California Press in February 2024.
+      Lockwood continues to maintain an active performance schedule with The
+      Sway Machinery, and with <a
+        href="https://www.gordonlockwood.com/"
+        target="_blank"
+        class="underline underline-offset-2">Gordon Lockwood</a
+      >, his duo project with percussionist Ricky Gordon, a fellow disciple of
+      Carolina Slim.
     </p>
-    <p class="main__para">
+    <p>
       Jeremiah received his PhD from the Stanford University Graduate School of
       Education Concentration in Education and Jewish Studies in 2021. His
       dissertation and book project illuminates the work of contemporary Hasidic
       cantors who embrace early 20<sup>th</sup> century cantorial music as a non-conforming
       aesthetic and spiritual practice that cuts against the grain of the musical
       and social norms of their birth community. He was a 2022-23 Yale Institute
-      of Sacred Music Fellow, where he conducted research on the <i>khazente</i>
+      of Sacred Music Fellow, where he conducted research on the <i>khaznte</i>
       phenomenon of popular women performers of cantorial music in the early 20<sup
         >th</sup
       > century and composed a new piece of music, titled <i
@@ -95,7 +128,7 @@ const heroImage = "/images/Jeremiah.jpg";
       Studies Award and the 2019-20 recipient of the YIVO Kremen Memorial
       Fellowship in East European Arts, Music and Theater.
     </p>
-    <p class="main__para">
+    <p>
       Lockwood’s music career began with over a decade of apprenticeship to the
       legendary Piedmont Blues musician Carolina Slim, playing in the subways of
       New York City. He also trained under his grandfather Cantor Jacob
@@ -112,95 +145,5 @@ const heroImage = "/images/Jeremiah.jpg";
       University of Colorado, University of Chicago, Williams College, and
       Cornell University, among other residencies and projects.
     </p>
-    <p class="main__para">
-      Lockwood continues to maintain an active performance schedule with The
-      Sway Machinery, and with <a
-        href="https://www.gordonlockwood.com/"
-        target="_blank">Gordon Lockwood</a
-      >, his duo project with percussionist Ricky Gordon, a fellow disciple of
-      Carolina Slim.
-    </p>
   </main>
 </Layout>
-
-<style>
-  .split-ish {
-    display: flex;
-  }
-
-  .split-ish > * {
-    width: 100%;
-  }
-
-  .hero__text h1 {
-    text-align: center;
-    padding: 1em 0;
-    line-height: 1.2em;
-    font-size: 2rem;
-  }
-
-  .hero__para {
-    text-align: center;
-    font-size: 1.5em;
-  }
-
-  .hero__image {
-    height: 500px;
-    object-fit: contain;
-    animation: embiggen 1s;
-  }
-
-  .main {
-    font-size: 1.5em;
-    line-height: 1.2em;
-    margin: 5em auto;
-    max-width: clamp(30ch, 75vw, 70ch);
-  }
-
-  .main__para {
-    margin: 2em 0;
-  }
-
-  @keyframes embiggen {
-    from {
-      transform: scale(0.8) translateY(10%);
-      opacity: 0;
-    }
-  }
-
-  @media screen and (max-width: 1000px) {
-    .split-ish {
-      flex-direction: column;
-    }
-
-    .hero__image {
-      margin-top: 5em;
-    }
-  }
-
-  .mailing-list {
-    text-align: center;
-  }
-
-  .mailing-list a {
-    display: inline-block;
-    padding: 0.5rem;
-    font-size: larger;
-    font-weight: bold;
-    background: darkblue;
-    color: lightblue;
-    text-decoration: none;
-    border-radius: 0.35rem;
-  }
-
-  .mailing-list a:hover {
-    opacity: 0.8;
-  }
-
-  aside {
-    padding: 3rem;
-  }
-  aside p {
-    margin-top: 2rem;
-  }
-</style>
