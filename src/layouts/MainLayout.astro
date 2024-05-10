@@ -15,7 +15,7 @@ const { title, keywords = defaultKeywords } = Astro.props as Props;
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
     <meta name="keywords" content={keywords.join(", ")} />
-    <link rel=" icon" type="image/x-icon" href="/favicon.ico" />
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
     <meta name="generator" content={Astro.generator} />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
@@ -26,8 +26,8 @@ const { title, keywords = defaultKeywords } = Astro.props as Props;
   </head>
 
   <body
-    style="background-image: url(/background2.jpeg)"
-    class="relative min-h-screen bg-sky-200/50 bg-cover bg-fixed pb-96 pt-24 text-lg bg-blend-lighten selection:bg-sky-400/50"
+    style="background-image: url(/background2.jpeg); background-size: 100%;"
+    class="relative min-h-screen bg-sky-200/50 bg-fixed pb-96 pt-24 text-lg bg-blend-lighten selection:bg-sky-400/50"
   >
     <Navbar client:load />
 
