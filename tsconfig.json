@@ -10,14 +10,6 @@
     "strict": true,
     "verbatimModuleSyntax": true,
     "baseUrl": "/Users/jacob/Desktop/code/jeremiahlockwood.com",
-    "paths": {
-      "@components/*": [
-        "components/*"
-      ],
-      "@layouts/*": [
-        "layouts/*"
-      ]
-    },
     "jsx": "preserve",
     "jsxImportSource": "solid-js"
   }
