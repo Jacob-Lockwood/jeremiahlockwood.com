@@ -80,9 +80,9 @@ const pages = await Promise.all(
                   <img
                     src={entry.data.image}
                     alt={entry.data.title}
-                    class="z-10 aspect-square w-full object-cover"
+                    class="z-0 aspect-square w-full object-cover"
                   />
-                  <div class="absolute bottom-0 z-20 w-full bg-sky-200/90 p-5">
+                  <div class="absolute bottom-0 z-10 w-full bg-sky-200/90 p-5">
                     <h3 class="font-bold">{entry.data.title}</h3>
                     {entry.data.previewText && (
                       <p class="line-clamp-6 md:line-clamp-4">
