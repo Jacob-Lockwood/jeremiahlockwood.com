@@ -76,7 +76,10 @@ const pages = await Promise.all(
           (entry) =>
             entry && (
               <div class="w-full md:w-80 lg:w-96">
-                <a href={`/music/${entry.slug}`} class="relative aspect-square">
+                <a
+                  href={`/music/${entry.slug}`}
+                  class="relative block aspect-square h-full w-full"
+                >
                   <img
                     src={entry.data.image}
                     alt={entry.data.title}
