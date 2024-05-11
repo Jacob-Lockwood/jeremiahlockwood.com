@@ -4,8 +4,8 @@ import { getCollection } from "astro:content";
 
 const projects = await getCollection("visual-art");
 
-const left = projects.filter((_, i) => i % 2 === 0);
-const right = projects.filter((_, i) => i % 2 === 1);
+const left = projects.slice(0, Math.ceil(projects.length / 2));
+const right = projects.slice(Math.ceil(projects.length / 2));
 ---
 
 <Layout title="Visual Art | Jeremiah Lockwood">
