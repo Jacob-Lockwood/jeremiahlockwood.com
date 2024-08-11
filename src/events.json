@@ -1,38 +1,14 @@
 [
   {
-    "date": "Wednesday, May 15, 7-9:30pm",
+    "date": "Wednesday, August 21, 7-9:30pm",
     "title": "Gordon Lockwood at Terra Blues",
     "address": "Terra Blues (149 Bleecker St., Manhattan)",
     "description": ["https://www.terrablues.com/"]
   },
   {
-    "date": "May 19-21",
-    "title": "A Funny Thing Happened On the Way To the Synagogue: Cantors, Opera Singers, and Jewish Performance Culture. A Conference and Program at UCLA",
-    "address": "10745 Dickson Ct Los Angeles, CA 90095",
-    "description": [
-      "Presenting on Monday, May 20",
-      "https://www.eventbrite.com/e/a-funny-thing-happened-on-the-way-to-the-synagogue-conference-at-ucla-tickets-794771381597"
-    ]
-  },
-  {
-    "date": "June 25-29",
-    "title": "The Sway Machinery at Krakow Jewish Culture festival",
-    "address": "36 Józefa Street, 31-056 Kraków, Poland",
-    "description": [
-      "We will be presenting the European premiere of our new project The Dream Past",
-      "https://www.jewishfestival.pl/en/"
-    ]
-  },
-  {
-    "date": "Saturdays in July at 6PM - July 6, 13, 20, 27",
-    "title": "Gordon Lockwood residency at Barbès",
-    "address": "376 9th Street, Park Slope, Brooklyn",
-    "description": ["https://www.barbesbrooklyn.com/"]
-  },
-  {
-    "date": "Saturday August 10 1:30pm-7pm",
-    "title": "Gordon Lockwood at Blues Barbecue",
-    "address": "Hudson River Park's Pier 76, Manhattan",
-    "description": ["https://hudsonriverpark.org/visit/events/"]
+    "date": "Tuesday, September 24",
+    "title": "Jeremiah Lockwood at the Tenement Museum",
+    "address": "Tenement Museum (103 Orchard St, New York, NY)",
+    "description": ["https://www.tenement.org/", "Details TBD"]
   }
 ]

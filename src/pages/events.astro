@@ -1,39 +1,82 @@
 ---
 import Layout from "../layouts/MainLayout.astro";
 import events from "../events.json";
-import linkify from "linkify-string";
-
-const addressToLink = (address: string) =>
-  "https://www.google.com/maps/search/" +
-  new URLSearchParams({ api: "1", query: encodeURIComponent(address) });
+import Event from "src/components/Event.astro";
 ---
 
 <Layout title="Events | Jeremiah Lockwood">
   <h1 class="mx-auto mb-20 mt-10 px-10 text-center text-4xl font-bold">
     Upcoming Events
   </h1>
-  <main class="flex flex-wrap justify-center gap-20 px-10">
-    {
-      events.length ? (
-        events.map(({ title, date, address, description }) => (
-          <div class="flex w-full flex-col gap-2 text-xl sm:w-64">
-            <p>{date}</p>
-            <p>{title}</p>
-            <a href={addressToLink(address)} class="text-sky-800">
-              {address}
-            </a>
-            {description.map((line) => (
-              <p
-                set:html={linkify(line, {
-                  className: "text-sky-800 break-all",
-                })}
-              />
-            ))}
-          </div>
-        ))
-      ) : (
-        <p>No upcoming events right now.</p>
-      )
-    }
-  </main>
+  <div class="grid gap-10 px-20 lg:grid-cols-2">
+    <div class="mx-auto flex max-w-prose flex-col gap-10">
+      <h2 class="text-center text-2xl font-bold">Romania Tour</h2>
+      <p>
+        Traveling in Transylvania in August 2024, New York-based Jewish music
+        performers, Jake Shulman-Ment and Jeremiah Lockwood, and London-based
+        Francesca Ter-Berg, will offer concerts featuring their unique
+        approaches to the musical heritage of Eastern European Jewish life. The
+        concerts will include old time klezmer fiddle music, Yiddish songs, and
+        cantorial recitatives, performed with a vivid sense of the continued
+        vitality and urgency of these musical languages.
+      </p>
+      <p>
+        Jake Shulman-Ment "is considered one of the finest klezmer fiddlers on
+        the planet,” according to the US National Public Radio. He was the first
+        foreigner to become a member of the famous folk orchestra "Rapsozii
+        Botoşanilor." Shulman-Ment has traveled and taught throughout the world
+      </p>
+      <p>
+        Jeremiah Lockwood is a scholar, guitarist and composer whose work
+        focuses on the cantorial music tradition--his grandmother was born in
+        the Transylvanian town of Ermihalyfalva. He is the founder of the band
+        The Sway Machinery and author of the recent book Golden Ages: Hasidic
+        Singers and Cantorial Revival in the Digital Era.
+      </p>
+      <p>
+        Francesca Ter-Berg is a cellist and producer with an in-depth
+        improvisation and collaborative practice. She is known for her
+        specialism in Eastern European traditional music (specifically Klezmer
+        and Roma) which she has been researching and performing for 15 years.
+      </p>
+      <h3 class="font-bold">Tour dates:</h3>
+      <Event
+        title="Tranzit House"
+        address="Tranzit House, Cluj"
+        date="Saturday August 24"
+        description={[]}
+      />
+      <Event
+        title="Sinagoga Mare"
+        address="Sinagoga Mare, Sibiu"
+        date="Sunday August 25 - 7pm"
+        description={[]}
+      />
+      <Event
+        title="Synagogue"
+        address="Synagogue, Mediaș"
+        date="Tuesday August 27"
+        description={[]}
+      />
+      <Event
+        title="Cultural Center"
+        address="Cultural Center, Baia Mare"
+        date="Thursday August 29"
+        description={[]}
+      />
+    </div>
+
+    <main>
+      <h2 class="mb-10 text-center text-2xl font-bold">Other Shows</h2>
+      <div class="mx-auto flex max-w-prose flex-col gap-16">
+        {
+          events.length ? (
+            events.map((ev) => <Event {...ev} />)
+          ) : (
+            <p>No upcoming events right now.</p>
+          )
+        }
+      </div>
+    </main>
+  </div>
 </Layout>

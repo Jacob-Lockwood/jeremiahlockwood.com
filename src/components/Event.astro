@@ -1,0 +1,32 @@
+---
+import linkify from "linkify-string";
+
+const addressToLink = (address: string) =>
+  "https://www.google.com/maps/search/?" +
+  new URLSearchParams({ api: "1", query: address });
+
+export interface Props {
+  date: string;
+  title: string;
+  address: string;
+  description: string[];
+}
+const { date, title, address, description } = Astro.props;
+---
+
+<div class="flex w-full flex-col gap-2 text-xl">
+  <p>{date}</p>
+  <p>{title}</p>
+  <a href={addressToLink(address)} target="_blank" class="text-sky-800">
+    {address}
+  </a>
+  {
+    description.map((line) => (
+      <p
+        set:html={linkify(line, {
+          className: "text-sky-800 break-all",
+        })}
+      />
+    ))
+  }
+</div>
