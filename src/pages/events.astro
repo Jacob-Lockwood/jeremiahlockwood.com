@@ -3,6 +3,10 @@ import Layout from "../layouts/MainLayout.astro";
 import events from "../events.json";
 import linkify from "linkify-string";
 
+import { db, eq, Event, EventDate } from "astro:db";
+const eventDates = await db.select().from(EventDate).all();
+const events = await db.select().from(Event).all();
+
 const addressToLink = (address: string) =>
   "https://www.google.com/maps/search/" +
   new URLSearchParams({ api: "1", query: encodeURIComponent(address) });
