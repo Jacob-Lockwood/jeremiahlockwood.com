@@ -1,6 +1,7 @@
 ---
 title: Purim Ghost Wings
 image: /images/purim-ghost-wings/jeremiah-wings.JPG
+count: 2
 ---
 
 ![](/images/purim-ghost-wings/jeremiah-wings.JPG)

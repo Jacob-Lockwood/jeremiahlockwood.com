@@ -1,6 +1,7 @@
 ---
 title: The Gospel According to Carolina Slim
 image: /images/the-gospel-according-to-carolina-slim/image.JPG
+count: 1
 ---
 
 ![](/images/the-gospel-according-to-carolina-slim/image.JPG)

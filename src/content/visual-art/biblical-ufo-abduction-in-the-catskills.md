@@ -1,6 +1,7 @@
 ---
 title: Biblical UFO Abduction in the Catskills
 image: /images/biblical-ufo-abduction-in-the-catskills/0.JPG
+count: 7
 ---
 
 ![](/images/biblical-ufo-abduction-in-the-catskills/0.JPG)

@@ -1,6 +1,7 @@
 ---
 title: Finding Aid to the 1912-14 Ansky Expedition Crypto-Zoological Archive
 image: /images/finding-aid-to-the-1912-14-ansky-expedition-crypto-zoological-archive/1.JPG
+count: 8
 ---
 
 ![](/images/finding-aid-to-the-1912-14-ansky-expedition-crypto-zoological-archive/1.JPG)

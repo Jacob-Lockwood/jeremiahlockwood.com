@@ -19,7 +19,7 @@ const visualArt = defineCollection({
   schema: z.object({
     title: z.string().optional(),
     image: z.string().optional(),
-    // description: z.string(),
+    count: z.number(),
   }),
 });
 

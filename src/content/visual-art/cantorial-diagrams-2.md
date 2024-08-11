@@ -1,6 +1,7 @@
 ---
 title: Cantorial Diagrams Vol. 2
 image: /images/cantorial-diagrams-2/7.JPG
+count: 11
 ---
 
 ![](/images/cantorial-diagrams-2/1.JPG) ![](/images/cantorial-diagrams-2/2.JPG)
