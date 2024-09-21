@@ -99,8 +99,8 @@ new music: an album of The Dream Past recently recorded during marathon sessions
 in Krakow, Poland, and a beautiful and strikingly different album titled
 Memories of Old New York produced by Stuart Bogie and featuring arrangements by
 Bogie, Lockwood and Yuli Ya'el Be'eri, a long time collaborator of the band who
-has joined the group in recent, reinvigorating the music and live show. Look out
-for new releases and record release shows in 2025!!!
+has joined the group in recent years, reinvigorating the music and live show.
+Look out for new releases and record release shows in 2025!!!
 
 <figure>
 <img src="/images/sway-original-lineup.png" alt="" />
