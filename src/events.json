@@ -1,14 +1,58 @@
 [
   {
-    "date": "Wednesday, August 21, 7-9:30pm",
+    "date": "Tuesday, September 24, 2024, 6:30PM - 8:00PM ET",
+    "title": "Tenement Museum: Virtual Tenement Tour & Concert: High Holidays in the Tenements",
+    "address": "",
+    "description": [
+      "https://www.tenement.org/events/virtual-tenement-tour-concert-high-holidays-in-the-tenements/",
+      "Celebrate the high holidays with the Tenement Museum in this all-new virtual program and concert! On September 24th, join historian Lila Corwin Berman and Tenement Museum President Annie Polland on YouTube Live as they discuss the way in which immigrant Jews used the marketplace to bring High Holidays into the tenement districts, attracting the attention of the entire city.",
+      "We’ll end the program with a concert where Dr. Jeremiah Lockwood, cantorial scholar and musician, will perform unique interpretations of classic cantorial repertoire."
+    ]
+  },
+  {
+    "date": "Thursday, September 26 7-9:30pm",
     "title": "Gordon Lockwood at Terra Blues",
-    "address": "Terra Blues (149 Bleecker St., Manhattan)",
+    "address": "149 Bleecker Street, Manhattan",
     "description": ["https://www.terrablues.com/"]
   },
   {
-    "date": "Tuesday, September 24",
-    "title": "Jeremiah Lockwood at the Tenement Museum",
-    "address": "Tenement Museum (103 Orchard St, New York, NY)",
-    "description": ["https://www.tenement.org/", "Details TBD"]
+    "date": "Sunday September 29 4:40pm",
+    "title": "The Ebony Hillbillies at Hoboken Fall Arts & Music Festival",
+    "address": "Washington Street between Sixth Street and Seventh Street",
+    "description": [
+      "https://www.hobokennj.gov/news/city-of-hoboken-announces-hoboken-fall-arts-music-festival-on-sept-29"
+    ]
+  },
+  {
+    "date": "Thursday October 17 7-9:30pm",
+    "title": "Gordon Lockwood at Terra Blues",
+    "address": "149 Bleecker Street, Manhattan",
+    "description": ["https://www.terrablues.com/"]
+  },
+  {
+    "date": "Saturday October 26, 2024 4pm",
+    "title": "The Individuals of Peace (Ricky Gordon marching band) at The Stone Hill Spectacle",
+    "address": "40 Springwish Lane, Flint Hill VA 22627",
+    "description": ["https://www.stonehilltheatricalfoundation.org/"]
+  },
+  {
+    "date": "Thursday October 31, 2024",
+    "title": "The Sway Machinery at The Museum of Jewish Heritage with Midwood",
+    "address": "36 Battery Pl, New York, NY",
+    "description": [
+      "https://mjhnyc.org/events/midwood-with-the-sway-machinery-concert/"
+    ]
+  },
+  {
+    "date": "Wednesday November 6, 2024 6:30pm",
+    "title": "Golden Ages: Book Launch event with Cantor Yoel Kohn at The New School",
+    "address": "66 W 12th St, New York, NY",
+    "description": ["https://events.newschool.edu/"]
+  },
+  {
+    "date": "Thursday November 7 7pm-9:30",
+    "title": "Gordon Lockwood at Terra Blues",
+    "address": "149 Bleecker Street, Manhattan",
+    "description": ["https://www.terrablues.com/"]
   }
 ]

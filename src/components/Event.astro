@@ -16,7 +16,7 @@ const { date, title, address, description } = Astro.props;
 
 <div class="flex w-full flex-col gap-2 text-xl">
   <p>{date}</p>
-  <p>{title}</p>
+  <p class="font-semibold">{title}</p>
   <a href={addressToLink(address)} target="_blank" class="text-sky-800">
     {address}
   </a>
