@@ -8,59 +8,9 @@ import Event from "../components/Event.astro";
   <h1 class="mx-auto mb-20 mt-10 px-10 text-center text-4xl font-bold">
     Upcoming Events
   </h1>
-  <div class="grid gap-10 px-20 lg:grid-cols-2">
-    <div class="mx-auto flex max-w-prose flex-col gap-10">
-      <h2 class="text-center text-2xl font-bold">
-        The High Holidays 2024/5785
-      </h2>
-      <p>
-        Tickets are available for all of the services I will be working on
-        serving as music director, with bandmates from The Sway Machinery and
-        other special guests ...
-      </p>
-      <Event
-        title="Erev Rosh Hashanah Service at Brooklyn Bowl"
-        address="61 Wythe Ave, Brooklyn, NY"
-        date="Wednesday, October 2, 7:30pm"
-        description={[
-          "https://www.brooklynbowl.com/brooklyn/events/detail/rosh-hashanah-at-brooklyn-bowl-k7vgfb8hst9bw",
-          `The service on the first night will be enlivened by a concert "after party" featuring a double bill of projects from Sway Machinery members: Yuli Ya'el Be'eri, playing music from her developing women's choral project, and Armo, classic and brand-new afrobeat, led by Jordan McLean.`,
-        ]}
-      />
-      <Event
-        title="Rosh Hashanah Morning Service and Lunch at Brooklyn Bowl"
-        address="61 Wythe Ave, Brooklyn, NY"
-        date="Thursday, October 3, 10am"
-        description={[
-          "https://www.brooklynbowl.com/brooklyn/events/detail/rosh-hashanah-at-brooklyn-bowl-k7vgfb8hsx6db",
-          "Our first night and morning of Rosh Hashanah services at Brooklyn Bowl will feature guest appearances from Yoel Kohn. Scion of a Satmar Hasidic cantorial family, Yoel has been pursuing a path outside of his birth community. He has brought his tremendous artistry and mastery of the “golden age” cantorial idiom to stages around the world, frequently collaborating with musical director Jeremiah Lockwood.",
-        ]}
-      />
-      <Event
-        title="Kol Nidre at The Blue Gallery"
-        address="222 E 46th St, New York, NY"
-        date="Friday, October 11, 7:30 pm"
-        description={[
-          "https://www.eventbrite.com/e/kol-nidre-tickets-987309548437",
-        ]}
-      />
-      <Event
-        title="Yom Kippur Morning (Yizkor) at The Blue Gallery"
-        address="222 E 46th St, New York, NY"
-        date="Saturday, October 12, 10am"
-        description={[
-          "https://www.eventbrite.com/e/yom-kippur-tickets-987372185787?aff=oddtdtcreator",
-          "Our Yom Kippur morning service will be graced by a musical offering from legends of African American string band music, The Ebony Hillbillies.",
-        ]}
-      />
-      <img
-        src="/images/Sway-Machinery-Brookly-Bowl-2022-Alex-Lopez-Photography_001.jpg"
-        alt="The Sway Machinery at Brooklyn Bowl in 2022"
-      />
-    </div>
-
+  <div class="gap-10 px-20">
     <main>
-      <h2 class="mb-10 text-center text-2xl font-bold">Other Shows</h2>
+      <!-- <h2 class="mb-10 text-center text-2xl font-bold">Other Shows</h2> -->
       <div class="mx-auto flex max-w-prose flex-col gap-16">
         {
           events.length ? (
