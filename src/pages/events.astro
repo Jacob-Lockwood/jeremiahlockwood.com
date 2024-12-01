@@ -1,4 +1,5 @@
 ---
+import { Image } from "astro:assets";
 import Layout from "../layouts/MainLayout.astro";
 import events from "../events.json";
 import Event from "../components/Event.astro";
@@ -8,9 +9,52 @@ import Event from "../components/Event.astro";
   <h1 class="mx-auto mb-20 mt-10 px-10 text-center text-4xl font-bold">
     Upcoming Events
   </h1>
-  <div class="gap-10 px-20">
+  <div class="grid gap-10 px-20 lg:grid-cols-2">
+    <div class="mx-auto flex max-w-prose flex-col gap-10">
+      <h2 class="text-center text-2xl font-bold uppercase">
+        The Sway Machinery's Branches of Light<br />
+        featuring The Ebony Hillbillies
+      </h2>
+      <p>
+        Join The Sway Machinery and special guests, local roots music icons The
+        Ebony Hillbillies, for an utterly joyful completely unique winter
+        solstice celebration, just ahead of the rare megaholiday co-occurrence
+        of Khanukah, Christmas and Kwanza...
+      </p>
+      <p>
+        The Ebony Hillbillies – aka the last African-American String Band in
+        America - have been bringing the party to music lovers in NYC and around
+        the country for decades. According to lead singer Gloria Gassaway
+        Thomas, "When you see the Ebony Hillbillies, you go home and say, ‘Damn,
+        I had a ball, I got down with them, I had a workout!’"
+      </p>
+      <p>
+        The Sway Machinery has a long history of producing unique shows that
+        call upon the social qualities of the Yiddish-spiritual music tradition
+        known as khazones (cantorial art music). Part rock concert, part
+        theatrical experience, their shows have presented a unique facet of NYC
+        culture for well over a decade in a radically inclusive environment.
+      </p>
+
+      <Event
+        title="Branches of Light"
+        date="Saturday, December 21 7-10pm"
+        address="Nublu - 151 Ave C (bet. E. 9 and E. 10)"
+        description={[
+          "for tickets visit: https://dice.fm/partner/tatu-llc/event/7dog29-branches-of-light-the-sway-machinerys-haliday-ball-21st-dec-nublu-new-york-tickets",
+        ]}
+      />
+
+      <Image
+        src="/images/Branches_of_light.jpg"
+        alt="Branches of Light"
+        class="mx-auto w-[30rem]"
+        width="1200"
+        height="1800"
+      />
+    </div>
     <main>
-      <!-- <h2 class="mb-10 text-center text-2xl font-bold">Other Shows</h2> -->
+      <h2 class="mb-10 text-center text-2xl font-bold">Other Shows</h2>
       <div class="mx-auto flex max-w-prose flex-col gap-16">
         {
           events.length ? (

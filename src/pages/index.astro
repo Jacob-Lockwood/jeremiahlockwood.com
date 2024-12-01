@@ -1,4 +1,5 @@
 ---
+import { Image } from "astro:assets";
 import Layout from "../layouts/MainLayout.astro";
 ---
 
@@ -17,9 +18,32 @@ import Layout from "../layouts/MainLayout.astro";
         to articulate keenly felt needs in the present.
       </p>
     </div>
-    <img src="/images/Jeremiah.jpg" class="w-80 object-contain" />
+    <Image
+      src="/images/Jeremiah.jpg"
+      alt=""
+      class="w-80 object-contain"
+      width="577"
+      height="864"
+      loading="eager"
+    />
   </header>
   <section class="my-20 flex flex-col gap-10 text-center">
+    <a
+      href="https://dice.fm/partner/tatu-llc/event/7dog29-branches-of-light-the-sway-machinerys-haliday-ball-21st-dec-nublu-new-york-tickets"
+      class="mx-auto flex items-center gap-10 underline underline-offset-2"
+    >
+      <Image
+        src="/images/Branches_of_light.jpg"
+        alt="Branches of Light"
+        class="w-[30rem]"
+        width="1200"
+        height="1800"
+      />
+      <p class="w-56 text-xl">
+        Click here to buy tickets to the Branches of Light concert.
+      </p>
+    </a>
+
     <a
       href="http://eepurl.com/goSc9D"
       target="_blank"
@@ -27,6 +51,7 @@ import Layout from "../layouts/MainLayout.astro";
     >
       Click here to join the mailing list.
     </a>
+
     <a href="/events" class="text-2xl underline underline-offset-8">
       Click here for Jeremiah's upcoming events.
     </a>
@@ -37,10 +62,12 @@ import Layout from "../layouts/MainLayout.astro";
     >
       <p>Jeremiah's first book is out now:</p>
       <div class="flex flex-col items-center gap-10 lg:flex-row">
-        <img
+        <Image
           src="/images/golden_ages_cover.jpg"
-          alt="Cover image for Golden Ages"
+          alt="Cover of Golden Ages"
           class="w-80 object-contain"
+          width="1707"
+          height="2560"
         />
         <div class="flex max-w-3xl flex-col gap-5 text-left">
           <h2 class="text-3xl font-bold">
@@ -90,42 +117,37 @@ import Layout from "../layouts/MainLayout.astro";
       with issues arising from peering into the archive and imagining the power
       of “lost” forms of expression to articulate keenly felt needs in the
       present. Both his music performance and scholarship gravitate towards the
-      Jewish liturgical music and Yiddish expressive culture of the early 20<sup
-        >th</sup
-      > century and the reverberations of this cultural moment in present day artistic
-      and religious communities. Jeremiah’s research considers the work of cantors
-      as arbiters of social, intellectual and aesthetic change in times of crisis
-      and cultural transformation. Jeremiah is a current Fellow at the Katz Center
-      Fellow for Advanced Judaic Research at the University of Pennsylvania. His
-      first book, <i
-        >Golden Ages: Hasidic singers and cantorial revival in the digital era</i
+      Jewish liturgical music and Yiddish expressive culture of the early 20th
+      century and the reverberations of this cultural moment in present day
+      artistic and religious communities. Jeremiah’s research considers the work
+      of cantors as arbiters of social, intellectual and aesthetic change in
+      times of crisis and cultural transformation. Jeremiah is a current
+      Research Fellow at the Lowell Milken Center for Music of American Jewish
+      Experience at UCLA. His first book, <i>
+        Golden Ages: Hasidic singers and cantorial revival in the digital era</i
       >, was published by University of California Press in February 2024.
-      Lockwood continues to maintain an active performance schedule with The
-      Sway Machinery, and with <a
-        href="https://www.gordonlockwood.com/"
-        target="_blank"
-        class="underline underline-offset-2">Gordon Lockwood</a
-      >, his duo project with percussionist Ricky Gordon, a fellow disciple of
-      Carolina Slim.
     </p>
+
     <p>
       Jeremiah received his PhD from the Stanford University Graduate School of
       Education Concentration in Education and Jewish Studies in 2021. His
       dissertation and book project illuminates the work of contemporary Hasidic
-      cantors who embrace early 20<sup>th</sup> century cantorial music as a non-conforming
-      aesthetic and spiritual practice that cuts against the grain of the musical
-      and social norms of their birth community. He was a 2022-23 Yale Institute
-      of Sacred Music Fellow, where he conducted research on the <i>khaznte</i>
-      phenomenon of popular women performers of cantorial music in the early 20<sup
-        >th</sup
-      > century and composed a new piece of music, titled <i
-        >In der vayber shul</i
-      >/In the Women’s Synagogue that offered a creative response to this fecund
-      moment in Jewish musical history and premiered at Yale on April 1, 2023.
-      Jeremiah was the recipient of the 2021 Salo Baron New Voices in Jewish
-      Studies Award and the 2019-20 recipient of the YIVO Kremen Memorial
-      Fellowship in East European Arts, Music and Theater.
+      cantors who embrace early 20th century cantorial music as a non-conforming
+      aesthetic and spiritual practice that cuts against the grain of the
+      musical and social norms of their birth community. Jeremiah was a 2023-24
+      UPenn Katz Center Fellow, where he conducted research on early 20th
+      cantors and worked on developing his second book on gramophone era
+      cantorial culture. He was a 2022-23 Yale Institute of Sacred Music Fellow,
+      where he conducted research on the <i lang="y">khaznte</i> phenomenon of popular
+      women performers of cantorial music in the early 20th century and composed
+      a new piece of music, titled <i lang="y">In der vayber shul</i>/In the
+      Women’s Synagogue that offered a creative response to this fecund moment
+      in Jewish musical history and premiered at Yale on April 1, 2023. Jeremiah
+      was the recipient of the 2021 Salo Baron New Voices in Jewish Studies
+      Award and the 2019-20 recipient of the YIVO Kremen Memorial Fellowship in
+      East European Arts, Music and Theater.
     </p>
+
     <p>
       Lockwood’s music career began with over a decade of apprenticeship to the
       legendary Piedmont Blues musician Carolina Slim, playing in the subways of
@@ -133,15 +155,27 @@ import Layout from "../layouts/MainLayout.astro";
       Konigsberg and performed in his choir. His band The Sway Machinery seeks
       inspiration from diverse realms of experience related to the cultural
       geography of New York City. The Sway Machinery has played around the
-      world, including stints at legendary music festivals like Montreal Jazz,
-      Roskilde, and perhaps most notably, Festival au Desert in Timbuktu, Mali.
-      In addition to leading The Sway Machinery, Lockwood toured for years as
-      guitarist in the popular world-beat band Balkan Beat Box and has scored
-      numerous film and video projects. Lockwood’s duo project with musician
-      Jewlia Eisenberg (of blessed memory), Book of J, released their debut
-      album in 2018 to critical acclaim and were artists in residence at YIVO,
-      University of Colorado, University of Chicago, Williams College, and
-      Cornell University, among other residencies and projects.
+      world, most recently performing their new cantorial-inspired project
+      titled The Dream Past in Krakow in June 2024. In addition to leading The
+      Sway Machinery, Lockwood toured for years as guitarist in the popular
+      world-beat band Balkan Beat Box and has scored numerous film and video
+      projects. Lockwood’s duo project with musician Jewlia Eisenberg (of
+      blessed memory), Book of J, released their debut album in 2018 to critical
+      acclaim and were artists in residence at YIVO, University of Colorado,
+      University of Chicago, Williams College, and Cornell University, among
+      other residencies and projects. Since 2022, Lockwood has spearheaded a
+      touring project with Hasidic cantors, producing concerts, accompanying
+      cantors and arranging music for string quartet. Lockwood has presented the
+      “Golden Ages: Brooklyn Hasidic Cantors” concert at the Hamburg
+      Elbphilharmonie in 2024, among other prestigious venues.
+    </p>
+
+    <p>
+      Lockwood continues to maintain an active performance schedule with The
+      Sway Machinery, with Gordon Lockwood, his duo project with percussionist
+      Ricky Gordon, a fellow disciple of Carolina Slim, and as a touring member
+      of The Ebony Hillbillies, pioneers of African American old-time string
+      band music.
     </p>
   </main>
 </Layout>
