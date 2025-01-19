@@ -1,7 +1,6 @@
 ---
-// import { Image } from "astro:assets";
+import { Image } from "astro:assets";
 import Layout from "../layouts/MainLayout.astro";
-import events from "../events.json";
 import Event from "../components/Event.astro";
 ---
 
@@ -9,25 +8,77 @@ import Event from "../components/Event.astro";
   <h1 class="mx-auto mb-20 mt-10 px-10 text-center text-4xl font-bold">
     Upcoming Events
   </h1>
-  <!-- <div class="grid gap-10 px-5 lg:px-20 lg:grid-cols-2"> -->
-  <div class="px-5">
-    <!-- <div class="mx-auto flex max-w-prose flex-col gap-10">
-      <h2 class="text-center text-2xl font-bold uppercase">
-        The Sway Machinery's Branches of Light<br />
-        featuring The Ebony Hillbillies
-      </h2>
-    </div> -->
-    <main>
-      <h2 class="mb-10 text-center text-2xl font-bold">Other Shows</h2>
-      <div class="mx-auto flex max-w-prose flex-col gap-16">
-        {
-          events.length ? (
-            events.map((ev) => <Event {...ev} />)
-          ) : (
-            <p>No upcoming events right now.</p>
-          )
-        }
+  <div class="grid gap-10 px-5 lg:grid-cols-2 lg:px-20">
+    <!-- <div class="px-5"> -->
+    <div class="mx-auto flex max-w-prose flex-col gap-10">
+      <p>The Sway Machinery presents:</p>
+      <div class="flex max-w-3xl flex-col gap-5 text-left">
+        <h2 class="font-display text-5xl">The Valentines Eve Invitational</h2>
+        <p>with special guest Tamar Korn</p>
+        <p>Thursday February 13, 2025</p>
+        <p>
+          <a
+            href="https://maindragmusic.com/collections/live-at-main-drag"
+            target="_blank"
+            class="underline underline-offset-2"
+          >
+            Main Drag
+          </a> - 50 S. 1st Street, Brooklyn, NY 11206 7pm doors - 8pm show time
+        </p>
+        <p>
+          Special for the lovers, The Sway Machinery presents its unique
+          repertoire of love songs drawn from our 2015 EP You Will Love No One
+          But Me (aka Monsters of the Ancient World) and other deep cuts and
+          covers...tales of ghost lovers, impossible romance, and the amorous
+          interventions of talking animals, intimate familiars and
+          extraterrestrial visitors...we have not performed our Valentines show
+          since 2017...tell your friends...we will be supported by the
+          inimitable Tamar Korn!
+        </p>
+        <Image
+          src="/images/monsters of the ancient world.png"
+          alt="Monsters of the Ancient World"
+          class="object-contain"
+          width="1642"
+          height="1642"
+        />
       </div>
-    </main>
+    </div>
+    <div class="mx-auto flex max-w-prose flex-col gap-10">
+      <h2 class="text-center text-2xl font-bold">
+        Khazones Underground On Tour!
+      </h2>
+      <p class="text-center">
+        Jeremiah Lockwood and Judith Berkson bring their unique vision of
+        khazones (Yiddish spiritual heritage music) to the Bay Area!
+      </p>
+      <Event
+        title="Sonoma State University"
+        date="Thursday, February 20, 2025 5:30pm"
+        address="1801 E Cotati Ave, Rohnert Park, CA 94928"
+        description={["https://music.sonoma.edu/events/jewish-music-series-4"]}
+      />
+      <p>Private event - Friday February 21, 2025</p>
+      <Event
+        title="Congregation Rodef Sholom - Havdalah Concert"
+        address="170 North San Pedro Road, San Rafael"
+        date="Saturday February 22, 2025 4:30pm"
+        description={["https://www.rodefsholom.org/"]}
+      />
+
+      <h2 class="mb-10 text-center text-2xl font-bold">Gordon Lockwood</h2>
+      <Event
+        title="Terra Blues"
+        date="Thurday, March 20 7-9:30pm"
+        address="149 Bleecker Street, Manhattan"
+        description={["https://www.terrablues.com/"]}
+      />
+      <Event
+        date="Thurday, April 3 7-9:30pm"
+        title="Terra Blues"
+        address="149 Bleecker Street, Manhattan"
+        description={["https://www.terrablues.com/"]}
+      />
+    </div>
   </div>
 </Layout>
