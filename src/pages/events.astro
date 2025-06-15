@@ -1,5 +1,5 @@
 ---
-import { Image } from "astro:assets";
+// import { Image } from "astro:assets";
 import Layout from "../layouts/MainLayout.astro";
 import Event from "../components/Event.astro";
 ---
@@ -10,42 +10,9 @@ import Event from "../components/Event.astro";
   </h1>
   <div class="grid gap-10 px-5 lg:grid-cols-2 lg:px-20">
     <!-- <div class="px-5"> -->
+    <!-- <div class="mx-auto flex max-w-prose flex-col gap-10"></div> -->
     <div class="mx-auto flex max-w-prose flex-col gap-10">
-      <p>The Sway Machinery presents:</p>
-      <div class="flex max-w-3xl flex-col gap-5 text-left">
-        <h2 class="font-display text-5xl">The Valentines Eve Invitational</h2>
-        <p>with special guest Tamar Korn</p>
-        <p>Thursday February 13, 2025</p>
-        <p>
-          <a
-            href="https://maindragmusic.com/collections/live-at-main-drag"
-            target="_blank"
-            class="underline underline-offset-2"
-          >
-            Main Drag
-          </a> - 50 S. 1st Street, Brooklyn, NY 11206 7pm doors - 8pm show time
-        </p>
-        <p>
-          Special for the lovers, The Sway Machinery presents its unique
-          repertoire of love songs drawn from our 2015 EP You Will Love No One
-          But Me (aka Monsters of the Ancient World) and other deep cuts and
-          covers...tales of ghost lovers, impossible romance, and the amorous
-          interventions of talking animals, intimate familiars and
-          extraterrestrial visitors...we have not performed our Valentines show
-          since 2017...tell your friends...we will be supported by the
-          inimitable Tamar Korn!
-        </p>
-        <Image
-          src="/images/monsters of the ancient world.png"
-          alt="Monsters of the Ancient World"
-          class="object-contain"
-          width="1642"
-          height="1642"
-        />
-      </div>
-    </div>
-    <div class="mx-auto flex max-w-prose flex-col gap-10">
-      <h2 class="text-center text-2xl font-bold">
+      <!-- <h2 class="text-center text-2xl font-bold">
         Khazones Underground On Tour!
       </h2>
       <p class="text-center">
@@ -64,20 +31,23 @@ import Event from "../components/Event.astro";
         address="170 North San Pedro Road, San Rafael"
         date="Saturday February 22, 2025 3:30pm"
         description={["https://www.rodefsholom.org/"]}
-      />
+      /> -->
 
       <h2 class="mb-10 text-center text-2xl font-bold">Gordon Lockwood</h2>
       <Event
         title="Terra Blues"
-        date="Thurday, March 20 7-9:30pm"
+        date="Thursday, June 19 7-9:30pm"
         address="149 Bleecker Street, Manhattan"
         description={["https://www.terrablues.com/"]}
       />
       <Event
-        date="Thurday, April 3 7-9:30pm"
-        title="Terra Blues"
-        address="149 Bleecker Street, Manhattan"
-        description={["https://www.terrablues.com/"]}
+        title="July Residency at Barbés"
+        date="July 5, 12, 19 26  6pm"
+        address="Barbes - 376 9th Street, Park Slope,  Brooklyn"
+        description={[
+          "Join your friends Ricky Gordon and Jeremiah Lockwood every Saturday in July for old time blues, new time rhythms...good times for all!",
+          "https://www.barbesbrooklyn.com/",
+        ]}
       />
     </div>
   </div>
