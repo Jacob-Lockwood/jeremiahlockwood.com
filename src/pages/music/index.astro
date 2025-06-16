@@ -6,6 +6,7 @@ const pages = await Promise.all(
   [
     "sway-machinery",
     "gordon-lockwood",
+    "khazones-underground",
     "golden-ages",
     "solo",
     "book-of-j",
@@ -83,9 +84,14 @@ const pages = await Promise.all(
                   <img
                     src={entry.data.image}
                     alt={entry.data.title}
-                    class="z-0 aspect-square w-full object-cover"
+                    class="z-0 aspect-square w-full"
+                    class:list={[
+                      entry.id === "khazones-underground.md"
+                        ? "bg-white object-contain object-top"
+                        : "object-cover",
+                    ]}
                   />
-                  <div class="absolute bottom-0 z-10 w-full bg-sky-200/90 p-5">
+                  <div class="absolute bottom-0 z-10 w-full bg-black/60 p-5 text-neutral-100">
                     <h3 class="font-bold">{entry.data.title}</h3>
                     {entry.data.previewText && (
                       <p class="line-clamp-6 md:line-clamp-4">
