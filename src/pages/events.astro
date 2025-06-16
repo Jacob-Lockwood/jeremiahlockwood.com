@@ -8,47 +8,42 @@ import Event from "../components/Event.astro";
   <h1 class="mx-auto mb-20 mt-10 px-10 text-center text-4xl font-bold">
     Upcoming Events
   </h1>
-  <div class="grid gap-10 px-5 lg:grid-cols-2 lg:px-20">
-    <!-- <div class="px-5"> -->
-    <!-- <div class="mx-auto flex max-w-prose flex-col gap-10"></div> -->
-    <div class="mx-auto flex max-w-prose flex-col gap-10">
-      <!-- <h2 class="text-center text-2xl font-bold">
-        Khazones Underground On Tour!
-      </h2>
-      <p class="text-center">
-        Jeremiah Lockwood and Judith Berkson bring their unique vision of
-        khazones (Yiddish spiritual heritage music) to the Bay Area!
-      </p>
-      <Event
-        title="Sonoma State University"
-        date="Thursday, February 20, 2025 5:30pm"
-        address="1801 E Cotati Ave, Rohnert Park, CA 94928"
-        description={["https://music.sonoma.edu/events/jewish-music-series-4"]}
-      />
-      <p>Private event - Friday February 21, 2025</p>
-      <Event
-        title="Congregation Rodef Sholom - Havdalah Concert"
-        address="170 North San Pedro Road, San Rafael"
-        date="Saturday February 22, 2025 3:30pm"
-        description={["https://www.rodefsholom.org/"]}
-      /> -->
-
-      <h2 class="mb-10 text-center text-2xl font-bold">Gordon Lockwood</h2>
-      <Event
-        title="Terra Blues"
-        date="Thursday, June 19 7-9:30pm"
-        address="149 Bleecker Street, Manhattan"
-        description={["https://www.terrablues.com/"]}
-      />
-      <Event
-        title="July Residency at Barbés"
-        date="July 5, 12, 19 26  6pm"
-        address="Barbes - 376 9th Street, Park Slope,  Brooklyn"
-        description={[
-          "Join your friends Ricky Gordon and Jeremiah Lockwood every Saturday in July for old time blues, new time rhythms...good times for all!",
-          "https://www.barbesbrooklyn.com/",
-        ]}
-      />
-    </div>
+  <div class="grid gap-10 px-5 lg:grid-cols-3 lg:px-20">
+    <Event
+      title="Gordon Lockwood at Terra Blues"
+      date="Thursday, June 19 7-9:30pm"
+      address="149 Bleecker Street, Manhattan"
+      description={["https://www.terrablues.com/"]}
+    />
+    <Event
+      title="Gordon Lockwood - July Residency at Barbès"
+      date="July 5, 12, 19, 26 at 6pm"
+      address="Barbès - 376 9th Street, Park Slope,  Brooklyn"
+      description={[
+        "Join your friends Ricky Gordon and Jeremiah Lockwood every Saturday in July for old time blues, new time rhythms...good times for all!",
+        "https://www.barbesbrooklyn.com/",
+      ]}
+    />
+    <Event
+      title="Khazones Underground at Barbès!"
+      date="Wednesday, July 30 6pm"
+      address="Barbès - 376 9th Street, Park Slope,  Brooklyn"
+      description={[
+        "Jeremiah Lockwood and Judith Berkson bring their unique vision of khazones (Yiddish spiritual heritage music) to Brooklyn",
+        "https://www.barbesbrooklyn.com/",
+      ]}
+    />
+    <Event
+      title="Gordon Lockwood at Blues by the Boardwalk - Pier 97"
+      address="Hudson River Park (at 57th St on the river)"
+      date="Tuesday, August 5 6:30pm"
+      description={[]}
+    />
+    <Event
+      title="Gordon Lockwood at Terra Blues"
+      date="Thursday, August 21 7-9:30pm"
+      address="149 Bleecker Street, Manhattan"
+      description={["https://www.terrablues.com/"]}
+    />
   </div>
 </Layout>
