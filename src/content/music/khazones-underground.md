@@ -37,29 +37,19 @@ Khazones, with its old-world intonations and soloistic performance approach, has
 been rejected by the institutions of contemporary Jewish America—but its music
 has an indelible hold on creative artists.
 
-We realize the difficulty at this time that arts organizations are facing with
-cuts to federal funding, but we have decided to continue launching our idea
-despite these challenges and people are being asked to fill the short falls. We
-could wait for things to improve, on the level of American politics, war in the
-Middle East, or the uncertainty of changes in the life of American Jews. We’ve
-decided to proceed with our mission. Even though this is happening, we are still
-going to launch this because we believe that this work. It needed to happen
-before, it certainly needs to happen now. We need to keep creating new ideas,
-new culture, new connections between communities, and we will not stop.
-
 **It is now time for the cantor’s voice to return**. Artists from around the
 world are finding khazones and rediscovering meaning, spirituality and
 expression in this rich historic rich art form. This artist-driven vision of
 spirituality, memory and heritage is more relevant and needed than ever.
 
-We are writing to you today to invite you to **participate in the cantorial
-revival**. We propose that khazones holds a place in the world of today, and
-that music lovers like you have an active role to play, alongside artists, as
-cultural activists. Your contributions will make it possible for the archive of
-Jewish sacred sound to speak again. Your tax deductible donations (of any
-amount!) will help bring this project into the light. Supporters will receive
-the albums on digital and vinyl platforms, as well as access to other unique
-offerings.
+We invite you to
+[**participate in the cantorial revival**](https://fundraising.fracturedatlas.org/khazones-underground/campaigns/7069).
+We propose that khazones holds a place in the world of today, and that music
+lovers like you have an active role to play, alongside artists, as cultural
+activists. Your contributions will make it possible for the archive of Jewish
+sacred sound to speak again. Your tax deductible donations (of any amount!) will
+help bring this project into the light. Supporters will receive the albums on
+digital and vinyl platforms, as well as access to other unique offerings.
 
 Through our recording projects, Lockwood and Berkson present the work of artists
 engaged in culture making projects that will reverberate in the present and into

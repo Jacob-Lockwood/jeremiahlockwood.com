@@ -37,21 +37,22 @@ const MenuClose = () => (
 export function Navbar() {
   const [show, setShow] = createSignal(false);
   return (
-    <nav class="fixed top-0 z-50 block w-full gap-10 bg-sky-200/90 px-10 py-5 text-lg md:flex md:px-16 md:text-sm lg:text-lg">
+    <nav class="fixed top-0 z-50 block w-full gap-10 bg-sky-200/90 px-10 py-5 text-lg lg:flex lg:px-16 lg:text-sm xl:text-lg">
       <div class="mr-auto flex gap-10">
-        <button class="md:hidden" onClick={() => setShow((show) => !show)}>
+        <button class="lg:hidden" onClick={() => setShow((show) => !show)}>
           {show() ? <MenuClose /> : <MenuOpen />}
         </button>
         <span>Jeremiah Lockwood</span>
       </div>
       <div
-        class="hidden flex-col gap-10 py-10 md:flex md:flex-row md:p-0"
+        class="hidden flex-col gap-10 py-10 lg:flex lg:flex-row lg:p-0"
         classList={{ "!flex": show() }}
       >
         <a href="/">Home</a>
         <a href="/events">Events</a>
         <a href="/music/">Music</a>
         <a href="/academic/">Academic</a>
+        <a href="/music/khazones-underground">Khazones Underground</a>
         <a href="/visual-art/">Visual Art</a>
         <a href="/contact">Contact</a>
       </div>
