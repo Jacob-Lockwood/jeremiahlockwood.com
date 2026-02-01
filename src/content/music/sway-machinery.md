@@ -11,6 +11,12 @@ previewText:
   ago.” --The New Yorker
 ---
 
+![The Dream Past](/images/cover_the_dream_past.png)
+
+**First new album from the Sway Machinery in a decade!**
+
+<iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/album=3868503640/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/transparent=true/" seamless><a href="https://khazonesunderground.bandcamp.com/album/the-dream-past-the-sway-machinery">The Dream Past by The Sway Machinery</a></iframe>
+
 ![](/images/FKZ24_Koncert_The_Sway_Machinery_fot._Michał_Ramus-8.jpg)
 ![](/images/FKZ24_Koncert_The_Sway_Machinery_fot._Michał_Ramus-18.jpg)
 
@@ -32,20 +38,19 @@ Photos by Michał Ramus.
 
 <iframe src="https://www.youtube.com/embed/pEKuFleQDPI" frameborder="0" allowfullscreen=""></iframe>
 
-In 2023, long-running New York-based band The Sway Machinery premiered The Dream
-Past: A Sonic Conjuring, the latest project of the “unclassifiable and
-uplifting” (The New Yorker) Brooklyn rock band, The Sway Machinery. Featuring
-the double-front of vocalists Yuli Ya’el Be’eri and band-leader Jeremiah
-Lockwood, the ace horn section of band-cofounders Stuart Bogie and Jordan
-McLean, and the great beauty of drummer John Bollinger, The Dream Past extends
-the band’s long running project of cantorial revival—excavating the otherworldly
-potentials of Jewish sacred music and lost melodies to instigate a party, break
-boundaries between communities, and touch the past. Like its debut project,
-Hidden Melodies Revealed, which also drew upon High Holidays liturgy, The Dream
-Past offers an expansive vision of what can be achieved through commitment to
-ancestor voices and reciprocity with the dead. This new work turns to a lost and
-now rediscovered archive of bootleg recordings of live prayer leading as the
-source material for its ecstatic transformation.
+December 2025 saw the release of The Dream Past, the first album in a decade
+from the “unclassifiable and uplifting” (The New Yorker) Brooklyn rock band, The
+Sway Machinery. Featuring the double-front of vocalists Yuli Ya’el Be’eri and
+band-leader Jeremiah Lockwood, the ace horn section of band-cofounders Stuart
+Bogie and Jordan McLean, and the great beauty of drummer John Bollinger, The
+Dream Past extends the band’s long running project of cantorial
+revival—excavating the otherworldly potentials of Jewish sacred music and lost
+melodies to instigate a party, break boundaries between communities, and touch
+the past. Like its debut project, Hidden Melodies Revealed, which also drew upon
+High Holidays liturgy, The Dream Past offers an expansive vision of what can be
+achieved through commitment to ancestor voices and reciprocity with the dead.
+This new work turns to a lost and now rediscovered archive of bootleg recordings
+of live prayer leading as the source material for its ecstatic transformation.
 
 Founded around the year 2005, The Sway Machinery’s sound is rooted in the
 personal history of bandleader Jeremiah Lockwood, whose education included
@@ -69,7 +74,8 @@ grandfather’s debut concert took place in 1949. In 2009 the band released an
 album of music from the project and performed a version of the project in Los
 Angeles and San Francisco.
 
-<iframe src="https://www.youtube.com/embed/zLVQjV7wlQQ" frameborder="0" allowfullscreen=""></iframe>
+<!-- Hidden Melodies Revealed video has been privated -->
+<!-- <iframe src="https://www.youtube.com/embed/zLVQjV7wlQQ" frameborder="0" allowfullscreen=""></iframe> -->
 
 In January of 2010, The Sway Machinery traveled to Mali to perform at the
 legendary Festival of the Desert in Timbuktu. While in Mali, the group recorded
@@ -94,13 +100,13 @@ original love songs, You Will Love No One But Me.
 
 <iframe src="https://www.youtube.com/embed/mUsxF2-1bqM" frameborder="0" allowfullscreen=""></iframe>
 
-After a partial hiatus, the band is currently working on releasing a flood of
-new music: an album of The Dream Past recently recorded during marathon sessions
-in Krakow, Poland, and a beautiful and strikingly different album titled
-Memories of Old New York produced by Stuart Bogie and featuring arrangements by
-Bogie, Lockwood and Yuli Ya'el Be'eri, a long time collaborator of the band who
-has joined the group in recent years, reinvigorating the music and live show.
-Look out for new releases and record release shows in 2025!!!
+After a partial hiatus, the band reunited in 2022, joined by long-time
+collaborator Yuli Ya’el Be’eri on bass and vocal, reinvigorating the band's
+recordings and live shows. The band recently released The Dream Past recorded
+during marathon sessions in Krakow, Poland. The band is also working on a
+beautiful and strikingly different album titled Memories of Old New York
+produced by Stuart Bogie and featuring arrangements by Bogie, Lockwood and
+Be’eri. Look out for new releases and record release shows in 2026!!!
 
 <figure>
 <img src="/images/sway-original-lineup.png" alt="" />
@@ -108,6 +114,10 @@ Look out for new releases and record release shows in 2025!!!
 </figure>
 
 ### Albums
+
+The Dream Past (Khazones Underground, 2025)
+
+<iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/album=3868503640/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/transparent=true/" seamless><a href="https://khazonesunderground.bandcamp.com/album/the-dream-past-the-sway-machinery">The Dream Past by The Sway Machinery</a></iframe>
 
 Hidden Melodies Revealed (JDub Records, 2009)
 
