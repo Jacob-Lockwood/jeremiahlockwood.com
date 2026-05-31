@@ -1,6 +1,6 @@
 ---
 import MainLayout from "../../layouts/MainLayout.astro";
-import { getEntryBySlug } from "astro:content";
+import { getEntry } from "astro:content";
 
 const pages = await Promise.all(
   [
@@ -13,7 +13,7 @@ const pages = await Promise.all(
     "composer-for-film-and-video",
     "fraternal-order-of-the-society-blues",
     "discography",
-  ].map((slug) => getEntryBySlug("music", slug)),
+  ].map((slug) => getEntry("music", slug)),
 );
 ---
 
@@ -78,7 +78,7 @@ const pages = await Promise.all(
             entry && (
               <div class="w-full md:w-80 lg:w-96">
                 <a
-                  href={`/music/${entry.slug}`}
+                  href={`/music/${entry.id}`}
                   class="relative block aspect-square h-full w-full"
                 >
                   <img

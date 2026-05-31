@@ -3,14 +3,14 @@
   "compilerOptions": {
     "target": "ESNext",
     "module": "ESNext",
-    "moduleResolution": "node",
+    "moduleResolution": "bundler",
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": true,
     "strict": true,
     "verbatimModuleSyntax": true,
-    "baseUrl": "/Users/jacob/Desktop/code/jeremiahlockwood.com",
+    // "baseUrl": "/Users/jacob/Desktop/code/jeremiahlockwood.com",
     "jsx": "preserve",
-    "jsxImportSource": "solid-js"
-  }
+    "jsxImportSource": "solid-js",
+  },
 }
