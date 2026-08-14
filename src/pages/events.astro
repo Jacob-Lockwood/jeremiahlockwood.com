@@ -7,111 +7,96 @@ import Event from "../components/Event.astro";
   <h1 class="mx-auto mb-20 mt-10 px-10 text-center text-4xl font-bold">
     Upcoming Events
   </h1>
-  <div class="grid gap-10 px-5 lg:grid-cols-3 lg:px-20">
+  <div class="mx-auto flex max-w-3xl flex-col gap-2 px-10 text-xl">
+    <h2 class="text-2xl font-bold">
+      High Holidays with Livluv (formerly known as Because Jewish)
+    </h2>
+    <p>
+      Join Jeremiah Lockwood and members of The Sway Machinery and many special
+      guests for a unique, music-focused exploration of the "Days of Awe" in a
+      community focused on deep listening, joy, and seeking. Together we will
+      achieve moments of interiority and transformation!
+    </p>
     <Event
-      title="With the Ebony Hillbillies"
-      date="Thursday, June 4, 2026 6pm"
-      address="Langston Hughes Community Library and Cultural Center (100-01 Northern Boulevard, Corona, NY 11368)"
-      description={["https://theebonyhillbillies.com/"]}
-    />
-
+      title="Erev Rosh Hashanah"
+      date="Friday, September 11 7pm"
+      venue="Nu Blu Classic"
+      address="62 Loisaida Ave (Avenue C), New York, NY 10009"
+    >
+      <p>
+        Music focused service, followed by a set from Armo, a project of Jordan
+        McLean (featuring members of Antibalas).
+      </p>
+      <p>
+        https://www.eventbrite.com/e/first-night-rosh-hashanah-tickets-1993711085526
+      </p>
+    </Event>
     <Event
-      title="Gordon Lockwood at Terra Blues"
-      date="Thursday, June 11, 2026 7-9:30pm"
-      address="149 Bleecker Street, Manhattan"
-      description={["https://www.terrablues.com/"]}
-    />
-
+      title="Rosh Hashanah morning at Brooklyn Bowl"
+      date="Saturday, September 12 9am doors, service begins at 10am"
+      venue="Brooklyn Bowl"
+      address="61 Wythe Avenue, Brooklyn, NY 11249"
+    >
+      <p>
+        includes: 10am Music Focused Service 12:30pm Festive Blue Ribbon Lunch
+      </p>
+      <p>
+        https://www.brooklynbowl.com/brooklyn/events/detail/a-musical-celebration-of-rosh-hashanah-k7vgf_clftrdf
+      </p>
+    </Event>
+    <Event title="Kol Nidre" date="Sunday September 20">
+      <p>Check back soon for details!</p>
+    </Event>
+    <div class="h-20"></div>
     <Event
-      title="With the Ebony Hillbillies"
-      date="Sunday, June 14, 2026 2-7pm"
-      address="Jackie Robinson Park Bandshell (W. 150th Street & Bradhurst Ave)"
-      description={["Showtime approx. 5pm", "https://theebonyhillbillies.com/"]}
-    />
-
+      title="Carolina Slim 100th Birthday Celebration"
+      date="Sunday September 13 7:00 - 10:00 PM (Doors at 6:30PM)"
+      venue="Jalopy Theater"
+      address="315 Columbia St, Brooklyn, New York"
+    >
+      <p>
+        Disciples and friends of the late blues musician Carolina Slim
+        (1926-2014) will gather at Jalopy Theater to celebrate the life, music
+        and memory of one of the last exponents of the traditional rural
+        Piedmont Blues tradition. Featuring sets by The Fraternal Order of the
+        Society Blues, Bill Carney's Jug Addicts, and Harlem Slim.
+      </p>
+      <p>https://www.viewcy.com/event/carolina_slim_100th_b</p>
+    </Event>
+    <div class="h-20"></div>
     <Event
-      title="With the Ebony Hillbillies"
-      date="Sunday, June 21, 2026"
-      address="Croton Point Park, NY"
-      description={[
-        "Hudson River Music Festival",
-        "https://theebonyhillbillies.com/",
-        "https://www.hudsonrivermusicfestival.com",
-      ]}
-    />
-
+      title="Khazones Underground Concert at Indiana University"
+      date="Sunday October 11 7pm (doors at 6:30pm)"
+    >
+      <p>
+        Khazones Underground, a new record label founded by Judith Berkson and
+        Jeremiah Lockwood, will present music from two recent releases, in
+        collaboration with the Born Jewish Studies Program at Indiana
+        University. Part of a day long program Memory Transformed: Materials of
+        Heritage in Eastern European Jewish Life - also including a symposium
+        (featuring talks by Lockwood and Berkson) and private museum tour with
+        museum curator Jenny McComas.
+      </p>
+      <p>Check back for more details soon!</p>
+    </Event>
+    <div class="h-20"></div>
     <Event
-      title="Selichos/Transformation - Krakow Jewish Culture Festival"
-      date="Thursday, July 2, 2026 at 21:00"
-      address="Tempel Synagogue | Miodowa 24, 30-001 Kraków"
-      description={[
-        "European debut",
-        "New music in the cantorial tradition, composed by Jeremiah Lockwood",
-        "Featuring Yoel Kohn and Riki Rose",
-        "Chamber orchestra conducted by Alan Pierson",
-        "https://jewishfestival.pl/en/blog/2026/05/10/concerts-of-the-35thjcf/",
-      ]}
-    />
-
+      title="Gordon Lockwood at TerraBlues"
+      date="Thursday December 17 7-9:30pm"
+      venue="TerraBlues"
+      address="149 Bleecker Street"
+    >
+      <p>https://gordonlockwood.com/</p>
+      <p>https://www.terrablues.com/</p>
+    </Event>
     <Event
-      title="Closing concert - Krakow Jewish Culture Festival"
-      date="Saturday, July 4, 2026"
-      address=""
-      description={[
-        "https://jewishfestival.pl/en/blog/2026/05/10/concerts-of-the-35thjcf/",
-      ]}
-    />
-
-    <Event
-      title="Jeremiah Lockwood’s Annual Barbes Residency"
-      date="Saturdays in July, 6pm"
-      address="Barbes-376 9th St Brooklyn NY 11215"
-      description={["https://www.barbesbrooklyn.com/"]}
-    />
-
-    <Event
-      title="Peach Cobbler"
-      date="Saturday, July 11, 2026 at 6pm"
-      address="Barbes-376 9th St Brooklyn NY 11215"
-      description={[
-        "Songwriter and virtuoso fingerpicking guitarist Jeremiah Lockwood (The Sway Machinery, Carolina Slim) teams up with percussionist Ronald McBee (Sun Ra Arkestra) and David Colding (The Ebony Hillbillies) for a set of new and old time blues and ballads.",
-        "https://www.barbesbrooklyn.com/",
-      ]}
-    />
-
-    <Event
-      title="Jeremiah Lockwood and Jake Shulman-Ment"
-      date="Saturday, July 18, 2026 at 6pm"
-      address="Barbes-376 9th St Brooklyn NY 11215"
-      description={[
-        "Jeremiah Lockwood and Jake Shulman-Ment, “one of the finest klezmer fiddlers on the planet” (NPR), present a concert of old/new Yiddish music: khazones (spiritual music), Yiddish ballads, and klezmer.",
-        "https://www.barbesbrooklyn.com/",
-      ]}
-    />
-
-    <Event
-      title="Gordon Lockwood"
-      date="Saturday, July 25, 2026 at 6pm"
-      address="Barbes-376 9th St Brooklyn NY 11215"
-      description={[
-        "Jeremiah Lockwood and Ricky Gordon, two disciples of blues legend Carolina Slim, have been making music together for over three decades. Expect old time blues and new time rhythm.",
-        "https://gordonlockwood.com",
-        "https://www.barbesbrooklyn.com/",
-      ]}
-    />
-
-    <Event
-      title="Gordon Lockwood at Terra Blues"
-      date="Thursday, July 16, 2026 7-9:30pm"
-      address="149 Bleecker Street, Manhattan"
-      description={["https://www.terrablues.com/"]}
-    />
-
-    <Event
-      title="Gordon Lockwood at Terra Blues"
-      date="Thursday, August 13, 2026 7-9:30pm"
-      address="149 Bleecker Street, Manhattan"
-      description={["https://www.terrablues.com/"]}
-    />
+      title="Gordon Lockwood at TerraBlues"
+      date="Thursday January 7 7-9:30pm"
+      venue="TerraBlues"
+      address="149 Bleecker Street"
+    >
+      <p>https://gordonlockwood.com/</p>
+      <p>https://www.terrablues.com/</p>
+    </Event>
   </div>
 </Layout>

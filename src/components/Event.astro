@@ -1,32 +1,44 @@
 ---
-import linkify from "linkify-string";
-
+import linkifyHtml from "linkify-html";
 const addressToLink = (address: string) =>
   "https://www.google.com/maps/search/?" +
   new URLSearchParams({ api: "1", query: address });
-
 export interface Props {
-  date: string;
   title: string;
-  address: string;
-  description: string[];
+  venue?: string;
+  address?: string;
+  date: string;
 }
-const { date, title, address, description } = Astro.props;
+const { title, date, venue, address } = Astro.props as Props;
+const description = (await Astro.slots.render("default")) ?? "";
 ---
 
-<div class="flex w-full flex-col gap-2 text-xl">
-  <p>{date}</p>
-  <p class="font-semibold">{title}</p>
-  <a href={addressToLink(address)} target="_blank" class="text-sky-800">
-    {address}
-  </a>
-  {
-    description.map((line) => (
-      <p
-        set:html={linkify(line, {
-          className: "text-sky-800 break-all",
-        })}
-      />
-    ))
-  }
+<div class="event my-4">
+  <time class="left underline">{date}</time>
+  <p class="right font-bold">{title}</p>
+  <div class="left mb-2">
+    <p>{venue}</p>
+    {
+      address && (
+        <p>
+          <a target="_blank" href={addressToLink(address)}>
+            {address}
+          </a>
+        </p>
+      )
+    }
+  </div>
+  <div
+    class="right flex-shrink"
+    set:html={linkifyHtml(description, { className: "underline" })}
+  />
 </div>
+
+<style>
+  .left {
+    @apply md:float-left md:clear-left md:w-[40%];
+  }
+  .right {
+    @apply md:float-right md:w-[50%];
+  }
+</style>
