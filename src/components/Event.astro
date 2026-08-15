@@ -13,7 +13,7 @@ const { title, date, venue, address } = Astro.props as Props;
 const description = (await Astro.slots.render("default")) ?? "";
 ---
 
-<div class="event my-4">
+<div class="my-4">
   <time class="left underline">{date}</time>
   <p class="right font-bold">{title}</p>
   <div class="left mb-2">
@@ -39,6 +39,9 @@ const description = (await Astro.slots.render("default")) ?? "";
     @apply md:float-left md:clear-left md:w-[40%];
   }
   .right {
-    @apply md:float-right md:w-[50%];
+    @apply md:float-right md:clear-right md:w-[50%];
+  }
+  .event {
+    overflow-wrap: break-word;
   }
 </style>
