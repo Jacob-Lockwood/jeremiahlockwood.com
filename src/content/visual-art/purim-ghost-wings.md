@@ -16,7 +16,7 @@ and perhaps not completely successful, none the less I would like to share with
 you the words of the five ghosts who visited me, see below.
 
 <div class="sm:w-96 mx-auto">
-  <iframe src="https://www.instagram.com/p/C4zJEhXNhAC/embed/" class="!aspect-[9/16]"></iframe>
+  <iframe src="https://www.instagram.com/p/C4zJEhXNhAC/embed/" class="aspect-9/16!"></iframe>
 </div>
 
 Purim Spectacle – Five Ghosts

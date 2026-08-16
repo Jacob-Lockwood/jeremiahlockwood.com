@@ -46,7 +46,7 @@ export function Navbar() {
       </div>
       <div
         class="hidden flex-col gap-10 py-10 lg:flex lg:flex-row lg:p-0"
-        classList={{ "!flex": show() }}
+        classList={{ "flex!": show() }}
       >
         <a href="/">Home</a>
         <a href="/events">Events</a>

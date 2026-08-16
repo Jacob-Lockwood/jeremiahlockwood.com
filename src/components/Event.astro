@@ -29,12 +29,13 @@ const description = (await Astro.slots.render("default")) ?? "";
     }
   </div>
   <div
-    class="right flex-shrink"
+    class="right shrink"
     set:html={linkifyHtml(description, { className: "underline" })}
   />
 </div>
 
 <style>
+  @reference "#global.css";
   .left {
     @apply md:float-left md:clear-left md:w-[40%];
   }

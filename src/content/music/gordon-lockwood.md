@@ -54,14 +54,14 @@ Drummer Ricky Gordon is a member of the Wynton Marsalis Ensemble and a prolific 
       <a
         href="https://open.spotify.com/album/25xbK0u9KQZduumUkw1ynM?si=E5DzlbeyTdG6wQFPIfzmiQ"
         target="_blank"
-        class="bg-black px-5 text-white no-underline flex items-center gap-2 justify-center w-48 h-16"
+        class="bg-black px-5 text-white! no-underline flex items-center gap-2 justify-center w-48 h-16"
       >
         Listen on <img class="inline w-16" src="/images/spotify.svg" alt="Spotify" />
       </a>
       <a
         href="https://music.apple.com/us/album/once-upon-a-time-the-fire-burned-brighter-ballads/1674810118"
         target="_blank"
-        class="bg-gradient-to-b from-pink-700 to-orange-600 px-5 w-48 gap-2 h-16 flex justify-center items-center text-white no-underline"
+        class="bg-linear-to-b from-pink-700 to-orange-600 px-5 w-48 gap-2 h-16 flex justify-center items-center text-white! no-underline"
       >
         Listen on <img class="inline w-16" src="/images/apple-music.svg" alt="Apple Music" />
       </a>
