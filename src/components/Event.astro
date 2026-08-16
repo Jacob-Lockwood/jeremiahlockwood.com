@@ -30,7 +30,9 @@ const description = (await Astro.slots.render("default")) ?? "";
   </div>
   <div
     class="right shrink"
-    set:html={linkifyHtml(description, { className: "underline" })}
+    set:html={linkifyHtml(description, {
+      className: "text-blue-800 underline",
+    })}
   />
 </div>
 
