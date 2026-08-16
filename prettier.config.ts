@@ -1,5 +1,4 @@
-// @ts-check
-/** @type {import("prettier").Config} */
+import { type Config } from "prettier";
 export default {
   proseWrap: "always",
   plugins: ["prettier-plugin-astro", "prettier-plugin-tailwindcss"],
@@ -11,4 +10,4 @@ export default {
       },
     },
   ],
-};
+} satisfies Config;
